@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PersofinDesktop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dc40df539e75708f1a3bc0f6af7c55d2254e283")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0dd3504e02f956002afca2f563fca5171dd2d13")]
 [assembly: System.Reflection.AssemblyProductAttribute("PersofinDesktop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PersofinDesktop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
