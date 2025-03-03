@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "45BIbk/2kzA=",
+  "dgSpecHash": "ELkisqfOFmU=",
   "success": true,
   "projectFilePath": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\PersofinDesktop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\snira\\.nuget\\packages\\inkore.ui.wpf\\1.2.8\\inkore.ui.wpf.1.2.8.nupkg.sha512",
-    "C:\\Users\\snira\\.nuget\\packages\\inkore.ui.wpf.modern\\0.10.0\\inkore.ui.wpf.modern.0.10.0.nupkg.sha512"
+    "C:\\Users\\snira\\.nuget\\packages\\inkore.ui.wpf.modern\\0.10.0\\inkore.ui.wpf.modern.0.10.0.nupkg.sha512",
+    "C:\\Users\\snira\\.nuget\\packages\\litedb\\5.0.21\\litedb.5.0.21.nupkg.sha512",
+    "C:\\Users\\snira\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512"
   ],
   "logs": []
 }

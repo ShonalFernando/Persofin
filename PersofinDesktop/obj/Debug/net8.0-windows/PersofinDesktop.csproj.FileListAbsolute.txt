@@ -27,3 +27,4 @@ D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\refint\Persofi
 D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\PersofinDesktop.pdb
 D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\PersofinDesktop.genruntimeconfig.cache
 D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\ref\PersofinDesktop.dll
+D:\Source\Repos\Persofin\PersofinDesktop\bin\Debug\net8.0-windows\LiteDB.dll

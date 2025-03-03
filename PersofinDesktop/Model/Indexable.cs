@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace PersofinDesktop.Model
 {
-    internal class Expense
+    public class Indexable
     {
         public int ID { get; set; }
-
-        public int Day { get; set; }
-        public int Month { get; set; }
-        public int Year { get; set; }
-
-
+        public Guid GUID { get; set; }
+        public DateTime DateCreated { get; set; } = DateTime.Now;
     }
 }
