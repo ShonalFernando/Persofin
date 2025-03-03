@@ -8,53 +8,19 @@ using System.Threading.Tasks;
 
 namespace PersofinDesktop.Services.Streams
 {
-    internal static class BankAccountService
+    internal class BankAccountService
     {
-        private static readonly string _databasePath = "PersofinData.db";
+        private readonly IRepository<BankAccount> _repository;
 
-        public static void AddBankAccount(BankAccount account)
+        public BankAccountService()
         {
-            using (var db = new LiteDatabase(_databasePath))
-            {
-                var collection = db.GetCollection<BankAccount>("PersofinData");
-                collection.Insert(account);
-            }
+            _repository = new Repository<BankAccount>("PersofinData.db", "PersofinData");
         }
 
-        public static List<BankAccount> GetAllBankAccounts()
-        {
-            using (var db = new LiteDatabase(_databasePath))
-            {
-                var collection = db.GetCollection<BankAccount>("PersofinData");
-                return collection.FindAll().ToList();
-            }
-        }
-
-        public static BankAccount? GetBankAccountById(int id)
-        {
-            using (var db = new LiteDatabase(_databasePath))
-            {
-                var collection = db.GetCollection<BankAccount>("PersofinData");
-                return collection.FindById(id);
-            }
-        }
-
-        public static bool UpdateBankAccount(BankAccount account)
-        {
-            using (var db = new LiteDatabase(_databasePath))
-            {
-                var collection = db.GetCollection<BankAccount>("PersofinData");
-                return collection.Update(account);
-            }
-        }
-
-        public static bool DeleteBankAccount(int id)
-        {
-            using (var db = new LiteDatabase(_databasePath))
-            {
-                var collection = db.GetCollection<BankAccount>("PersofinData");
-                return collection.Delete(id);
-            }
-        }
+        public void AddBankAccount(BankAccount account) => _repository.Add(account);
+        public List<BankAccount> GetAllBankAccounts() => _repository.GetAll();
+        public BankAccount? GetBankAccountById(int id) => _repository.GetById(id);
+        public bool UpdateBankAccount(BankAccount account) => _repository.Update(account);
+        public bool DeleteBankAccount(int id) => _repository.Delete(id);
     }
 }

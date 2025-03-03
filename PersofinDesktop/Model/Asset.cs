@@ -12,7 +12,7 @@ namespace PersofinDesktop.Model
     /// <summary>
     /// Represents an asset with details such as name, location, value, and purchase history.
     /// </summary>
-    internal class Assets : Indexable
+    internal class Asset : Indexable
     {
         /// <summary>
         /// Gets or sets the name of the asset.
