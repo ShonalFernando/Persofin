@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "D:\\Source\\Repos\\Persofin\\Persofin\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A26949BF-6FE0-45C3-BEB1-20552B9F0D8D}|..\\PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\services\\streams\\assetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A26949BF-6FE0-45C3-BEB1-20552B9F0D8D}|..\\PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\services\\streams\\bankaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -12,7 +15,7 @@
       "AbsoluteMoniker": "D:0:0:{A26949BF-6FE0-45C3-BEB1-20552B9F0D8D}|..\\PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\services\\streams\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A26949BF-6FE0-45C3-BEB1-20552B9F0D8D}|..\\PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\model\\assets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A26949BF-6FE0-45C3-BEB1-20552B9F0D8D}|..\\PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\model\\asset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A26949BF-6FE0-45C3-BEB1-20552B9F0D8D}|..\\PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\model\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -58,7 +61,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -69,16 +72,25 @@
               "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AssetService.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Services\\Streams\\AssetService.cs",
+              "RelativeDocumentMoniker": "..\\PersofinDesktop\\Services\\Streams\\AssetService.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Services\\Streams\\AssetService.cs",
+              "RelativeToolTip": "..\\PersofinDesktop\\Services\\Streams\\AssetService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:48:22.964Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Repository.cs",
               "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Services\\Streams\\Repository.cs",
               "RelativeDocumentMoniker": "..\\PersofinDesktop\\Services\\Streams\\Repository.cs",
@@ -91,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "IRepository.cs",
               "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Services\\Streams\\IRepository.cs",
               "RelativeDocumentMoniker": "..\\PersofinDesktop\\Services\\Streams\\IRepository.cs",
@@ -104,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Indexable.cs",
               "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Model\\Indexable.cs",
               "RelativeDocumentMoniker": "..\\PersofinDesktop\\Model\\Indexable.cs",
@@ -116,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MonthSummary.cs",
               "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Model\\MonthSummary.cs",
               "RelativeDocumentMoniker": "..\\PersofinDesktop\\Model\\MonthSummary.cs",
@@ -128,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "IncomeSource.cs",
               "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Model\\IncomeSource.cs",
               "RelativeDocumentMoniker": "..\\PersofinDesktop\\Model\\IncomeSource.cs",
@@ -140,41 +152,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BankAccountService.cs",
               "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Services\\Streams\\BankAccountService.cs",
               "RelativeDocumentMoniker": "..\\PersofinDesktop\\Services\\Streams\\BankAccountService.cs",
               "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Services\\Streams\\BankAccountService.cs",
               "RelativeToolTip": "..\\PersofinDesktop\\Services\\Streams\\BankAccountService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T18:38:21.087Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Assets.cs",
-              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Model\\Assets.cs",
-              "RelativeDocumentMoniker": "..\\PersofinDesktop\\Model\\Assets.cs",
-              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Model\\Assets.cs",
-              "RelativeToolTip": "..\\PersofinDesktop\\Model\\Assets.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T07:09:12.822Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
+              "Title": "Asset.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Model\\Asset.cs",
+              "RelativeDocumentMoniker": "..\\PersofinDesktop\\Model\\Asset.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Model\\Asset.cs",
+              "RelativeToolTip": "..\\PersofinDesktop\\Model\\Asset.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T07:09:12.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Recieved.cs",
               "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Model\\Recieved.cs",
               "RelativeDocumentMoniker": "..\\PersofinDesktop\\Model\\Recieved.cs",
@@ -186,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Spending.cs",
               "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Model\\Spending.cs",
               "RelativeDocumentMoniker": "..\\PersofinDesktop\\Model\\Spending.cs",
@@ -198,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UserAccount.cs",
               "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Model\\UserAccount.cs",
               "RelativeDocumentMoniker": "..\\PersofinDesktop\\Model\\UserAccount.cs",
@@ -210,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "DebtOrLoan.cs",
               "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Model\\DebtOrLoan.cs",
               "RelativeDocumentMoniker": "..\\PersofinDesktop\\Model\\DebtOrLoan.cs",
@@ -222,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "BankAccount.cs",
               "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Model\\BankAccount.cs",
               "RelativeDocumentMoniker": "..\\PersofinDesktop\\Model\\BankAccount.cs",
@@ -234,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\MainWindow.xaml",
               "RelativeDocumentMoniker": "..\\PersofinDesktop\\MainWindow.xaml",
@@ -245,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ShellWindow.xaml",
               "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\ShellWindow.xaml",
               "RelativeDocumentMoniker": "..\\PersofinDesktop\\View\\ShellWindow.xaml",
@@ -256,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\App.xaml",
               "RelativeDocumentMoniker": "..\\PersofinDesktop\\App.xaml",
@@ -267,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\PersofinDesktop\\MainWindow.xaml.cs",
