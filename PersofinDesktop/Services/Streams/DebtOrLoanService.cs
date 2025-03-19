@@ -13,7 +13,7 @@ namespace PersofinDesktop.Services.Streams
 
         public DebtOrLoanService()
         {
-            _repository = new Repository<DebtOrLoan>("PersofinData.db", "PersofinData");
+            _repository = new Repository<DebtOrLoan>("PersofinData.db", "Loans");
         }
 
         public void AddDebtOrLoan(DebtOrLoan loan) => _repository.Add(loan);

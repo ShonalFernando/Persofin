@@ -13,7 +13,7 @@ namespace PersofinDesktop.Services.Streams
 
         public AssetService()
         {
-            _repository = new Repository<Asset>("PersofinData.db", "PersofinData");
+            _repository = new Repository<Asset>("PersofinData.db", "Assets");
         }
 
         public void AddAsset(Asset asset) => _repository.Add(asset);

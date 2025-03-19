@@ -13,7 +13,7 @@ namespace PersofinDesktop.Services.Streams
 
         public SpendingService()
         {
-            _repository = new Repository<Spending>("PersofinData.db", "PersofinData");
+            _repository = new Repository<Spending>("PersofinData.db", "Spendings");
         }
 
         public void AddSpending(Spending spending) => _repository.Add(spending);

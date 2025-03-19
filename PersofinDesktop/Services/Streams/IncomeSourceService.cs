@@ -13,7 +13,7 @@ namespace PersofinDesktop.Services.Streams
 
         public IncomeSourceService()
         {
-            _repository = new Repository<IncomeSourceService>("PersofinData.db", "PersofinData");
+            _repository = new Repository<IncomeSourceService>("PersofinData.db", "IncomeSources");
         }
 
         public void AddIncomeSource(IncomeSourceService incomeSource) => _repository.Add(incomeSource);

@@ -13,7 +13,7 @@ namespace PersofinDesktop.Services.Streams
 
         public UserAccountService()
         {
-            _repository = new Repository<UserAccount>("PersofinData.db", "PersofinData");
+            _repository = new Repository<UserAccount>("PersofinData.db", "UserAccounts");
         }
 
         public void AddIncomeSource(UserAccount userAccount) => _repository.Add(userAccount);

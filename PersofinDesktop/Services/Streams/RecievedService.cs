@@ -13,7 +13,7 @@ namespace PersofinDesktop.Services.Streams
 
         public RecievedService()
         {
-            _repository = new Repository<Recieved>("PersofinData.db", "PersofinData");
+            _repository = new Repository<Recieved>("PersofinData.db", "Reciepts");
         }
 
         public void AddRecieved(Recieved recieved) => _repository.Add(recieved);

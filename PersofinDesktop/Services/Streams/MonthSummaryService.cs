@@ -13,7 +13,7 @@ namespace PersofinDesktop.Services.Streams
 
         public MonthSummaryService()
         {
-            _repository = new Repository<MonthSummary>("PersofinData.db", "PersofinData");
+            _repository = new Repository<MonthSummary>("PersofinData.db", "MonthlySummary");
         }
 
         public void AddMonthSummary(MonthSummary monthSummary) => _repository.Add(monthSummary);

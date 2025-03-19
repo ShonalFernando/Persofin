@@ -14,7 +14,7 @@ namespace PersofinDesktop.Services.Streams
 
         public BankAccountService()
         {
-            _repository = new Repository<BankAccount>("PersofinData.db", "PersofinData");
+            _repository = new Repository<BankAccount>("PersofinData.db", "BankAccounts");
         }
 
         public void AddBankAccount(BankAccount account) => _repository.Add(account);
