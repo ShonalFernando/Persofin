@@ -28,3 +28,7 @@ D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\PersofinDeskto
 D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\PersofinDesktop.genruntimeconfig.cache
 D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\ref\PersofinDesktop.dll
 D:\Source\Repos\Persofin\PersofinDesktop\bin\Debug\net8.0-windows\LiteDB.dll
+D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\View\Pages\AuthPages\CreateAccount.g.cs
+D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\View\Pages\AuthPages\LoginPage.g.cs
+D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\View\Pages\AuthPages\CreateAccount.baml
+D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\View\Pages\AuthPages\LoginPage.baml

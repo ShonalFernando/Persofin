@@ -28,7 +28,19 @@
             "fileVersion": "0.10.0.0"
           }
         }
-      }
+      },
+      "LiteDB/5.0.21": {
+        "dependencies": {
+          "System.Buffers": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/LiteDB.dll": {
+            "assemblyVersion": "5.0.21.0",
+            "fileVersion": "5.0.21.0"
+          }
+        }
+      },
+      "System.Buffers/4.5.1": {}
     }
   },
   "libraries": {
@@ -45,6 +57,20 @@
       "sha512": "sha512-PUuIzBPQGKnu/PDPa1/zcYCRvj8y89oamwUW+bXDrpMzIRi9Y6R24M6V0tz3iDtCQBKAW/be4coZvR93BqcoIA==",
       "path": "inkore.ui.wpf.modern/0.10.0",
       "hashPath": "inkore.ui.wpf.modern.0.10.0.nupkg.sha512"
+    },
+    "LiteDB/5.0.21": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ykJ7ffFl7P9YQKR/PLci6zupiLrsSCNkOTiw6OtzntH7d2kCYp5L1+3a/pksKgTEHcJBoPXFtg7VZSGVBseN9w==",
+      "path": "litedb/5.0.21",
+      "hashPath": "litedb.5.0.21.nupkg.sha512"
+    },
+    "System.Buffers/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "path": "system.buffers/4.5.1",
+      "hashPath": "system.buffers.4.5.1.nupkg.sha512"
     }
   }
 }

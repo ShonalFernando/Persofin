@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Source\Repos\Persofin\PersofinDesktop\App.xaml
-21640765252
+41859451461
 
-17-505918753
+26-2027820457
 202-2123781239
-MainWindow.xaml;View\ShellWindow.xaml;
+MainWindow.xaml;View\Pages\AuthPages\CreateAccount.xaml;View\Pages\AuthPages\LoginPage.xaml;View\ShellWindow.xaml;
 
 False
 
