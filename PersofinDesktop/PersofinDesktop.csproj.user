@@ -7,16 +7,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="View\Pages\AuthPages\CreateAccount.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="View\Pages\AuthPages\LoginPage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="View\ShellWindow.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="View\SubWindows\AuthWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -24,16 +15,7 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="View\Pages\AuthPages\CreateAccount.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="View\Pages\AuthPages\LoginPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="View\ShellWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="View\SubWindows\AuthWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

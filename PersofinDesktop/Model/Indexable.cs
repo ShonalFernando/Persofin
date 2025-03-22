@@ -31,12 +31,5 @@ namespace PersofinDesktop.Model
         /// The Date the entity is Created.
         /// </summary>
         public DateTime DateModified { get; set; } = DateTime.Now;
-
-
-        /// <summary>
-        /// Owner of the Data, For User Accounts is itself.
-        /// </summary>
-        public int OwnerID { get; set; }
-
     }
 }
