@@ -16,10 +16,10 @@ namespace PersofinDesktop.Services.Streams
             _repository = new Repository<UserAccount>("PersofinData.db", "UserAccounts");
         }
 
-        public void AddIncomeSource(UserAccount userAccount) => _repository.Add(userAccount);
-        public List<UserAccount> GetAlluserAccounts() => _repository.GetAll();
-        public UserAccount? GetuserAccountById(int id) => _repository.GetById(id);
-        public bool UpdateuserAccount(UserAccount userAccount) => _repository.Update(userAccount);
-        public bool DeleteuserAccount(int id) => _repository.Delete(id);
+        public void AddUserAccount (UserAccount userAccount) => _repository.Add(userAccount);
+        public List<UserAccount> GetAllUserAccounts() => _repository.GetAll();
+        public UserAccount? GetUserAccountById(int id) => _repository.GetById(id);
+        public bool UpdateUserAccount(UserAccount userAccount) => _repository.Update(userAccount);
+        public bool DeleteUserAccount(int id) => _repository.Delete(id);
     }
 }

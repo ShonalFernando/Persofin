@@ -1,0 +1,42 @@
+﻿<Window x:Class="PersofinDesktop.View.CreateAccountWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PersofinDesktop.View"
+        mc:Ignorable="d"
+        Title="AuthWindow" Height="768" Width="1366" WindowStyle="None" WindowState="Maximized" ResizeMode="NoResize" Background="{x:Null}" AllowsTransparency="True">
+    <Grid Background="#7FDCDCDC">
+        <Border CornerRadius="25,25,25,25" Width="1000" Height="500">
+            <Border.Effect>
+                <DropShadowEffect Opacity="0.25"/>
+            </Border.Effect>
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF1F1F1"/>
+                    <GradientStop Color="#FFE4E4E4" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <StackPanel Width="1000" Height="500" Orientation="Horizontal">
+                <Image Source="/Assets/Backgrounds/AuthSplash.jpg" Width="500" Height="500"/>
+                <StackPanel>
+                    <Label Content="Create Account" FontSize="48" FontFamily="Segoe UI Semilight" Margin="10,10,0,0" Foreground="#FF317342"/>
+                    <Separator  Margin="10,10,0,0"/>
+                    <Label Content="Username" Margin="25,30,0,0" FontSize="24" Foreground="#FF194E27" FontFamily="Segoe UI Semilight"/>
+                    <TextBox Margin="25,5,0,0" Width="350" Text="{Binding Username}"/>
+                    <Label Content="Password" Margin="25,20,0,0" FontSize="24" Foreground="#FF194E27" FontFamily="Segoe UI Semilight"/>
+                    <PasswordBox Margin="25,5,0,0" PasswordChanged="PasswordChanged" x:Name="PasswordInput"/>
+
+
+                    <Button Content="Create Account" Margin="25,25,0,0" HorizontalAlignment="Left" Background="#B2D3F3D9" Width="120" Command="{Binding CreateAccountCommand}"/>
+                    <Separator  Margin="25,120,0,0"/>
+                    <StackPanel Orientation="Horizontal" Margin="25,5,0,0">
+                        <Button Content="Login"  HorizontalAlignment="Left" Background="{x:Null}" Width="120"/>
+                        <Button Content="Exit" Margin="10,0,0,0"  HorizontalAlignment="Left" Background="{x:Null}" Width="120" Command="{Binding ExitCommand}"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>

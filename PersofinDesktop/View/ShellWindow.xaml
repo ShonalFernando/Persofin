@@ -18,22 +18,44 @@
                 </ui:NavigationViewItem.Icon>
             </ui:NavigationViewItem>
 
-            <ui:NavigationViewItem Content="Apps">
+            <ui:NavigationViewItem Content="Expense">
                 <ui:NavigationViewItem.Icon>
-                    <ui:FontIcon Icon="{x:Static ui:SegoeFluentIcons.OEM}"/>
+                    <ui:FontIcon Icon="{x:Static ui:SegoeFluentIcons.ArrowUp8}"/>
+                </ui:NavigationViewItem.Icon>
+            </ui:NavigationViewItem>
+            
+            <ui:NavigationViewItem Content="Income">
+                <ui:NavigationViewItem.Icon>
+                    <ui:FontIcon Icon="{x:Static ui:SegoeFluentIcons.ArrowDown8}"/>
+                </ui:NavigationViewItem.Icon>
+            </ui:NavigationViewItem>
+            <ui:NavigationViewItem Content="Accounts">
+                <ui:NavigationViewItem.Icon>
+                    <ui:FontIcon Icon="{x:Static ui:SegoeFluentIcons.Bank}"/>
+                </ui:NavigationViewItem.Icon>
+            </ui:NavigationViewItem>  
+                
+            <ui:NavigationViewItem Content="Schedules">
+                <ui:NavigationViewItem.Icon>
+                    <ui:FontIcon Icon="{x:Static ui:SegoeFluentIcons.CalendarSolid}"/>
                 </ui:NavigationViewItem.Icon>
             </ui:NavigationViewItem>
 
-            <ui:NavigationViewItem Content="Games">
+            <ui:NavigationViewItem Content="Online Banking">
                 <ui:NavigationViewItem.Icon>
-                    <ui:FontIcon Icon="{x:Static ui:SegoeFluentIcons.Game}"/>
+                    <ui:FontIcon Icon="{x:Static ui:SegoeFluentIcons.Website}"/>
                 </ui:NavigationViewItem.Icon>
             </ui:NavigationViewItem>
-
+            
+            <ui:NavigationViewItem Content="Assets">
+                <ui:NavigationViewItem.Icon>
+                    <ui:FontIcon Icon="{x:Static ui:SegoeFluentIcons.Package}"/>
+                </ui:NavigationViewItem.Icon>
+            </ui:NavigationViewItem>
         </ui:NavigationView.MenuItems>
 
         <Border>
-            <TextBlock Text="Content Area" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Frame Source="/View/Pages/IncomeExpense/IncomeRegistry.xaml"/>
         </Border>
 
     </ui:NavigationView>

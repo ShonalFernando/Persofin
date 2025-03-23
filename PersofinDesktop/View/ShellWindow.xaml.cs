@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PersofinDesktop.Session;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,11 @@ namespace PersofinDesktop.View
         public ShellWindow()
         {
             InitializeComponent();
+
+            if(SessionManager.CurrentUser is null)
+            {
+                Application.Current.Shutdown();
+            }
         }
     }
 }

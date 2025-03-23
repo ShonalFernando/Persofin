@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LiteDB;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace PersofinDesktop.Model
         /// The Main Indexer
         /// Auto incrimenting Simple Identification Number Starting from 0.
         /// </summary>
+        [BsonId]
         public int ID { get; set; }
 
         /// <summary>
@@ -31,5 +33,11 @@ namespace PersofinDesktop.Model
         /// The Date the entity is Created.
         /// </summary>
         public DateTime DateModified { get; set; } = DateTime.Now;
+
+        /// <summary>
+        /// The Main Indexer
+        /// Auto incrimenting Simple Identification Number Starting from 0.
+        /// </summary>
+        public int OwnerID { get; set; }
     }
 }
