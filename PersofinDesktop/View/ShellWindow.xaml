@@ -55,7 +55,7 @@
         </ui:NavigationView.MenuItems>
 
         <Border>
-            <Frame Source="/View/Pages/IncomeExpense/IncomeRegistry.xaml"/>
+            <Frame Source="/View/Pages/IncomeExpense/IncomeSourceRegistry.xaml"/>
         </Border>
 
     </ui:NavigationView>

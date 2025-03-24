@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PersofinDesktop.ViewModel.IncomeExpenseTracking;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,13 @@ namespace PersofinDesktop.View.Pages.IncomeExpense
     /// </summary>
     public partial class IncomeRegistry : Page
     {
+        IncomeTracker _incomeTracker;
+
         public IncomeRegistry()
         {
             InitializeComponent();
+            _incomeTracker = new IncomeTracker();
+            DataContext = _incomeTracker;
         }
     }
 }

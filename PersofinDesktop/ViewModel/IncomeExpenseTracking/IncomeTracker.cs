@@ -1,4 +1,5 @@
-﻿using PersofinDesktop.Command;
+﻿using iNKORE.UI.WPF.Modern.Controls;
+using PersofinDesktop.Command;
 using PersofinDesktop.Model;
 using System;
 using System.Collections.Generic;
@@ -74,6 +75,7 @@ namespace PersofinDesktop.ViewModel.IncomeExpenseTracking
         private void SaveTransaction(object? parameter)
         {
             // Logic to save transaction
+            MessageBox.Show("Test");
         }
     }
 }

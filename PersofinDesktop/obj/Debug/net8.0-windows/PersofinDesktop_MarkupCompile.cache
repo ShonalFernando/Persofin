@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Source\Repos\Persofin\PersofinDesktop\App.xaml
-5-1414861898
+61322629629
 2-373736474
-33-2927626
+35952523956
 202-2123781239
-MainWindow.xaml;View\AuthWindow.xaml;View\CreateAccountWindow.xaml;View\Pages\IncomeExpense\IncomeRegistry.xaml;View\ShellWindow.xaml;
+MainWindow.xaml;View\AuthWindow.xaml;View\CreateAccountWindow.xaml;View\Pages\IncomeExpense\IncomeRegistry.xaml;View\Pages\IncomeExpense\IncomeSourceRegistry.xaml;View\ShellWindow.xaml;
 
 False
 

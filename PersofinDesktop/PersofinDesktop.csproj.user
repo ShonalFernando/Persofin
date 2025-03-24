@@ -16,6 +16,9 @@
     <Compile Update="View\Pages\IncomeExpense\IncomeRegistry.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\Pages\IncomeExpense\IncomeSourceRegistry.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\ShellWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -31,6 +34,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Pages\IncomeExpense\IncomeRegistry.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Pages\IncomeExpense\IncomeSourceRegistry.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\ShellWindow.xaml">

@@ -37,3 +37,5 @@ D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\View\CreateAcc
 D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\View\Pages\IncomeExpense\IncomeRegistry.g.cs
 D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\View\Pages\IncomeExpense\IncomeRegistry.baml
 D:\Source\Repos\Persofin\PersofinDesktop\bin\Debug\net8.0-windows\Assets\Backgrounds\Persofin.png
+D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\View\Pages\IncomeExpense\IncomeSourceRegistry.g.cs
+D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\View\Pages\IncomeExpense\IncomeSourceRegistry.baml
