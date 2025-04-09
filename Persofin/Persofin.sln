@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersofinDesktop", "..\PersofinDesktop\PersofinDesktop.csproj", "{A26949BF-6FE0-45C3-BEB1-20552B9F0D8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersofinPro", "PersofinPro\PersofinPro.csproj", "{A02241FE-92B8-4FB7-9CD5-BEAFA111B7A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A26949BF-6FE0-45C3-BEB1-20552B9F0D8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A26949BF-6FE0-45C3-BEB1-20552B9F0D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A26949BF-6FE0-45C3-BEB1-20552B9F0D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A26949BF-6FE0-45C3-BEB1-20552B9F0D8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A02241FE-92B8-4FB7-9CD5-BEAFA111B7A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A02241FE-92B8-4FB7-9CD5-BEAFA111B7A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A02241FE-92B8-4FB7-9CD5-BEAFA111B7A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A02241FE-92B8-4FB7-9CD5-BEAFA111B7A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
