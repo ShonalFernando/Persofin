@@ -1,10 +1,10 @@
 ﻿
 FD:\Source\Repos\Persofin\PersofinDesktop\App.xaml;;
 FD:\Source\Repos\Persofin\PersofinDesktop\MainWindow.xaml;;
-FD:\Source\Repos\Persofin\PersofinDesktop\View\Transactions\TransactionsView.xaml;;
-FD:\Source\Repos\Persofin\PersofinDesktop\View\Transactions\AddTransactionWindow.xaml;;
-FD:\Source\Repos\Persofin\PersofinDesktop\View\Transactions\EditTransactionWindow.xaml;;
-FD:\Source\Repos\Persofin\PersofinDesktop\View\Projects\ProjectsView.xaml;;
 FD:\Source\Repos\Persofin\PersofinDesktop\View\Projects\AddProjectWindow.xaml;;
 FD:\Source\Repos\Persofin\PersofinDesktop\View\Projects\EditProjectWindow.xaml;;
+FD:\Source\Repos\Persofin\PersofinDesktop\View\Projects\ProjectsView.xaml;;
+FD:\Source\Repos\Persofin\PersofinDesktop\View\Transactions\AddTransactionWindow.xaml;;
+FD:\Source\Repos\Persofin\PersofinDesktop\View\Transactions\EditTransactionWindow.xaml;;
+FD:\Source\Repos\Persofin\PersofinDesktop\View\Transactions\TransactionsView.xaml;;
 

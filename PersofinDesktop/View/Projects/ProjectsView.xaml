@@ -18,24 +18,35 @@
         <TextBlock Text="Projects" Margin="10,10,10,10" FontSize="36" FontFamily="Segoe UI Light" Grid.Row="0" HorizontalAlignment="Left"/>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
             
-            <StackPanel Orientation="Horizontal" Margin="200,0,0,0">
-                <TextBlock Text="100,000,000 LKR" FontSize="24" Margin="50,20,0,20" MinWidth="100"/>
+            <StackPanel Orientation="Horizontal" Margin="200,0,0,0" ToolTip="Completed Projects for the selected date range">
+                <TextBlock Text="{Binding ProjectsCompleted, Mode=TwoWay}" FontSize="24" Margin="50,20,0,20" MinWidth="100"/>
                 <Image Source="/Assets/Icons/tick.png" Margin="10"/>
             </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="10/100" FontSize="24" Margin="50,20,0,20"  MinWidth="100"/>
+            <StackPanel Orientation="Horizontal" ToolTip="Completed Payments for completed projects for the selected date range">
+                <TextBlock Text="{Binding ProjectsPaid, Mode=TwoWay}" FontSize="24" Margin="50,20,0,20"  MinWidth="100"/>
                 <Image   Source="/Assets/Icons/pay.png" Margin="10"/>
             </StackPanel>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Grid.Row="1">
             <!-- Year Selector -->
-            <ComboBox Width="100" ItemsSource="{Binding Years}" SelectedItem="{Binding SelectedYear}" Margin="10,5,10,5"/>
+            <TextBlock Height="18" Margin="10,0,0,0" Foreground="#3F9A9A9A">Show Projects Starting on</TextBlock>
+            <DatePicker Width="150" SelectedDate="{Binding FilterStartDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="10,5,10,5"/>
 
-            <!-- Month Selector -->
-            <ComboBox Width="120" ItemsSource="{Binding Months}" SelectedItem="{Binding SelectedMonth}" Margin="0,5,5,5"/>
+            <TextBlock Margin="0,10,0,0" Foreground="#3F9A9A9A">-----------------</TextBlock>
+            <TextBlock Height="18" Margin="10,0,0,0" Foreground="#3F9A9A9A">To Completion Date On</TextBlock>
 
-            <ToggleButton Content="Show All" Margin="20,0,0,0" Height="30" Width="100" IsChecked="{Binding ShowAllTransactions, Mode=TwoWay}" Style="{DynamicResource ToggleButtonDefault}"/>
+            <DatePicker Width="150" SelectedDate="{Binding FilterEndDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="10,5,10,5"/>
+
+            <TextBlock Margin="0,10,0,0" Foreground="#3F9A9A9A">-----------------</TextBlock>
+
+            <ComboBox Margin="10,0,0,0" Height="30" Width="120" SelectedItem="{Binding SelectedFilter, Mode=TwoWay}" ItemsSource="{Binding FilterOptions}"/>
+
+            <TextBlock Margin="10,10,0,0" Foreground="#3F9A9A9A">----------------></TextBlock>
+
+            <Button Margin="10,0,0,0" Height="30" Width="120" Command="{Binding FilterProjectsCommand}" Content="Filter" Style="{DynamicResource ButtonPrimary}"/>
+
+
         </StackPanel>
 
         <DataGrid ItemsSource="{Binding Projects}"

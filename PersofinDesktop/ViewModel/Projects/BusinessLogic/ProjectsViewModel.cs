@@ -15,6 +15,8 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Windows;
 using PersofinDesktop.View.Projects;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Security.Cryptography.Xml;
 
 namespace PersofinDesktop.ViewModel.Projects
 {
@@ -33,46 +35,124 @@ namespace PersofinDesktop.ViewModel.Projects
             GotoAddProjectCommand = new RelayCommand(_ => GotoAuxTransactionWIndow(false));
             GotoEditProjectCommand = new RelayCommand(_ => GotoAuxTransactionWIndow(true), CanGoToEdit);
             DeleteProjectCommand = new RelayCommand(async _ => await DeleteTransaction(), CanGoToEdit);
-           
+            FilterProjectsCommand = new RelayCommand(_ => FilterFromRange());
             _ = LoadTransactionsAsync(); // Auto-load on startup
 
             ShowAllProjects = false;
-            FetchYearRange();
-            SelectedMonth = DateTime.Now.ToString("MMMM");
-            SelectedYear = DateTime.Now.Year;
-            FilterTransactionsAsync();
 
             // Refactor later
             Months.Add("Whole Year");
 
+            FilterStartDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+            FilterEndDate = FilterStartDate.AddMonths(1).AddDays(-1);
+
+            FetchSumarry();
+            //FilterTransactionsAsync();
         }
 
-        private async void FetchYearRange()
+
+        private void SetDateRangeFromcategory()
         {
-            var AllTransactions = await _projectRepo.GetAllAsync();
-            if (AllTransactions.Count() > 0)
+            DateTime currentDate = DateTime.Now;
+
+            // Reverse Assignment
+            if (SelectedFilter == "This Year")
             {
-                var min = AllTransactions.Min(t => t.DateRecorded.Year);
-                var max = AllTransactions.Max(t => t.DateRecorded.Year);
+                FilterStartDate = new DateTime(currentDate.Year, 1, 1);
+                FilterEndDate = new DateTime(currentDate.Year, 12, 31);
+            }
+            else if (SelectedFilter == "This Month")
+            {
+                FilterStartDate = new DateTime(currentDate.Year, currentDate.Month, 1);
+                FilterEndDate = FilterStartDate.AddMonths(1).AddDays(-1);
+            }
+            else if (SelectedFilter == "All Time")
+            {
+                // All Projects
+                FilterStartDate = DateTime.MinValue;
+                FilterEndDate = DateTime.MaxValue;
+                ShowAllProjects = true;
+            }
+        }
 
-                if (SelectedYear < min)
-                {
-                    SelectedYear++;
-                }
-                else if (SelectedYear > max)
-                {
-                    SelectedYear--;
-                }
+        private async void FilterFromRange()
+        {
+            DateTime currentDate = DateTime.Now;
+            ShowAllProjects = false;
 
-                if (max == min)
+            if (FilterStartDate <= FilterEndDate)
+            {
+                // Reverse Assignment
+                SetDateRangeFromcategory();
+            }
+            else
+            {
+                var mbDateRangeError = MessageBox.Show("The Start Date should be before the End Date", "Projects", MessageBoxButton.OK, MessageBoxImage.Error);
+                if (mbDateRangeError == MessageBoxResult.OK)
                 {
-                    Years = new List<int>() { min };
+                    SelectedFilter = "This Month";
+
+                    FilterStartDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+                    FilterEndDate = FilterStartDate.AddMonths(1).AddDays(-1);
+                }
+            }
+
+                // Actual Filter
+                var allProjects = await _projectRepo.GetAllAsync() as List<Project>;
+
+            if (allProjects != null)
+            {
+                if (!ShowAllProjects)
+                {
+                    var projectsFullyInRange = allProjects
+                        .Where(p => p.DateStart >= FilterStartDate && p.DateEnd <= FilterEndDate)
+                        .ToList();
+
+                    Projects.Clear();
+                    foreach (var project in projectsFullyInRange)
+                    {
+                        Projects.Add(project);
+                    }
                 }
                 else
                 {
-                    Years = Enumerable.Range(min, max - (min - 1)).ToList();
-                } 
+                    Projects.Clear();
+                    foreach (var project in allProjects)
+                    {
+                        Projects.Add(project);
+                    }
+                }
             }
+            else
+            {
+                // Handle the null case, maybe log or inform the user
+                Debug.WriteLine("Project list could not be retrieved or is empty.");
+            }
+        }
+
+        private void UpdateSelectedFilterBasedOnDates()
+        {
+            var currentDate = DateTime.Now;
+
+            var monthStart = new DateTime(currentDate.Year, currentDate.Month, 1);
+            var monthEnd = monthStart.AddMonths(1).AddDays(-1);
+
+            var yearStart = new DateTime(currentDate.Year, 1, 1);
+            var yearEnd = new DateTime(currentDate.Year, 12, 31);
+
+                if (FilterStartDate.Date == monthStart.Date && FilterEndDate.Date == monthEnd.Date)
+                {
+                    SelectedFilter = "This Month";
+                }
+                else if (FilterStartDate.Date == yearStart.Date && FilterEndDate.Date == yearEnd.Date)
+                {
+                    SelectedFilter = "This Year";
+                }
+                else
+                {
+                    SelectedFilter = "Custom";
+                }
+            
         }
 
         private void GotoAuxTransactionWIndow(bool isEdit)
@@ -86,15 +166,13 @@ namespace PersofinDesktop.ViewModel.Projects
                 if (SelectedProject is not null)
                     new EditProjectWindow(SelectedProject).ShowDialog();
             }
-
-            FetchYearRange();
             if (!ShowAllProjects)
             {
-                FilterTransactionsAsync();
+                FilterFromRange();
             }
             else
             {
-                _ = LoadTransactionsAsync();
+                FilterFromRange();
             }
         }
 
@@ -109,78 +187,41 @@ namespace PersofinDesktop.ViewModel.Projects
                     await _projectRepo.SaveAsync();
 
                     _ = LoadTransactionsAsync();
-                    FetchYearRange();
+
                     if (!ShowAllProjects)
                     {
-                        FilterTransactionsAsync();
+                        FilterFromRange();
                     }
                     else
                     {
-                        _ = LoadTransactionsAsync();
+                        FilterFromRange();
                     }
                 }
             }
         }
 
-        private async void FilterTransactionsAsync()
-        {
-            await LoadTransactionsAsync();
-
-            var filtered = new List<Project>();
-            var allTransaction = await _projectRepo.GetAllAsync();
-
-            foreach (var record in allTransaction)
-            {
-                if (!ShowAllProjects)
-                {
-
-                    if (SelectedMonthIndex != -1)
-                    {
-                        Debug.Write($"{record.DateRecorded} | {record.DateRecorded.Year} | {record.DateRecorded.Month} | Comparing | {SelectedYear}");
-
-                        // No month selected then all months
-                        if (record.DateRecorded.Year == SelectedYear && record.DateRecorded.Month == SelectedMonthIndex)
-                        {
-                            Debug.WriteLine($"{record.DateRecorded.Year} vs {SelectedYear}");
-                            filtered.Add(record);
-                        }
-                        else if (record.DateRecorded.Year == SelectedYear && SelectedMonthIndex == 0)
-                        {
-                            filtered.Add(record);
-                        }
-
-                        Projects.Clear();
-                        foreach (var item in filtered)
-                        {
-                            Projects.Add(item);
-                        }
-                    }
-                    else
-                    {
-                        filtered.Add(record);
-                    }
-                }
-                else
-                {
-                    await LoadTransactionsAsync();
-                }
-            }
-
-            FetchSumarry(); // recalculate income/expense
-        }
 
         private void FetchSumarry()
         {
-            var income = Projects
-                .Where(t => t.ProjectStatus.Equals("Completed", StringComparison.OrdinalIgnoreCase))
-                .Count();
+            // MessageBox.Show(Projects.Count.ToString());
+            var completeCount = Projects.Count(p =>
+                string.Equals(p.ProjectStatus, "Complete", StringComparison.OrdinalIgnoreCase));
 
-            var expense = Projects
-                .Where(t => t.Category.Equals("OnProgress", StringComparison.OrdinalIgnoreCase))
-                .Count();
+            var submittedUnpaid = Projects.Count(p =>
+                string.Equals(p.ProjectStatus, "Submitted Unpaid", StringComparison.OrdinalIgnoreCase));
 
-            TotalIncome = $"{income:N2} LKR";
-            TotalExpense = $"{expense:N2} LKR";
+            var onProgressCount = Projects.Count(p =>
+                string.Equals(p.ProjectStatus, "OnProgress", StringComparison.OrdinalIgnoreCase));
+
+            var paidCount = Projects.Count(p =>
+                string.Equals(p.ProjectStatus, "Complete", StringComparison.OrdinalIgnoreCase));
+
+            Debug.WriteLine($"Complete: {completeCount}, OnProgress: {onProgressCount}");
+
+            MessageBox.Show($"{Projects.Count} {completeCount} {onProgressCount}");
+
+            ProjectsPaid = $"{completeCount}/{completeCount + onProgressCount + submittedUnpaid}";
+            ProjectsCompleted = $"{completeCount + submittedUnpaid}/{completeCount + onProgressCount + submittedUnpaid}";
         }
 
         private async Task LoadTransactionsAsync()
@@ -196,8 +237,6 @@ namespace PersofinDesktop.ViewModel.Projects
             var items = await (new ProjectRepository(context2)).GetAllAsync();
             foreach (var item in items)
                 Projects.Add(item as Project);
-
-            FetchSumarry();
         }
     }
 }

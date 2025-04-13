@@ -23,5 +23,6 @@ namespace PersofinDesktop.ViewModel.Projects
         public ICommand GotoAddProjectCommand { get; }
         public ICommand GotoEditProjectCommand { get; }
         public ICommand DeleteProjectCommand { get; }
+        public ICommand FilterProjectsCommand { get; }
     }
 }

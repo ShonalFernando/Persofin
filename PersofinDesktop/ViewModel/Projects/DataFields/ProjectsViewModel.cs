@@ -59,56 +59,6 @@ namespace PersofinDesktop.ViewModel.Projects
             }
         }
 
-        private int _selectedYear;
-        public int SelectedYear
-        {
-            get => _selectedYear;
-            set
-            {
-                _selectedYear = value;
-                OnPropertyChanged();
-                FilterTransactionsAsync(); // Filter on change
-            }
-        }
-
-        private string _selectedMonth;
-        public string SelectedMonth
-        {
-            get => _selectedMonth;
-            set
-            {
-                if (_selectedMonth != value)
-                {
-                    _selectedMonth = value;
-                    OnPropertyChanged();
-
-                    if (value != "Whole Year")
-                    {
-                        _selectedMonthIndex = DateTime.ParseExact(value, "MMMM", CultureInfo.InvariantCulture).Month;
-                    }
-                    else
-                    {
-                        _selectedMonthIndex = -1;
-                    }
-                    FilterTransactionsAsync(); // or whatever logic
-                }
-            }
-        }
-
-        private int _selectedMonthIndex;
-        public int SelectedMonthIndex
-        {
-            get => _selectedMonthIndex;
-            set
-            {
-                if (_selectedMonthIndex != value)
-                {
-                    _selectedMonthIndex = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
         private bool _showAllProjects;
         public bool ShowAllProjects
         {
@@ -119,9 +69,6 @@ namespace PersofinDesktop.ViewModel.Projects
                 {
                     _showAllProjects = value;
                     OnPropertyChanged();
-
-                    // Refilter when toggled
-                    FilterTransactionsAsync();
                 }
             }
         }
@@ -140,6 +87,53 @@ namespace PersofinDesktop.ViewModel.Projects
             }
         }
 
+        // Filter Data Fields
+        private DateTime _dateStartFilter; 
+        public DateTime FilterStartDate
+        {
+            get => _dateStartFilter;
+            set
+            {
+                if (_dateStartFilter != value)
+                {
+                    _dateStartFilter = value;
+                    OnPropertyChanged();
+                    UpdateSelectedFilterBasedOnDates();
+                }
+            }
+        }
+
+        private DateTime _dateEndFilter;
+        public DateTime FilterEndDate
+        {
+            get => _dateEndFilter;
+            set
+            {
+                if (_dateEndFilter != value)
+                {
+                    _dateEndFilter = value;
+                    OnPropertyChanged();
+                    UpdateSelectedFilterBasedOnDates();
+                }
+            }
+        }
+
+        private string _selectedFilter;
+        public string SelectedFilter
+        {
+            get => _selectedFilter;
+            set
+            {
+                if (_selectedFilter != value)
+                {
+                    _selectedFilter = value;
+                    OnPropertyChanged();
+                    SetDateRangeFromcategory();
+                }
+            }
+        }
+
+
         // Other
         public ObservableCollection<Project> Projects { get; set; } = new();
 
@@ -147,5 +141,37 @@ namespace PersofinDesktop.ViewModel.Projects
             .Select(i => CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i))
             .ToList();
 
+
+        // For Display Purposes
+        private string _projectsCompleted = "00/00";
+        public string ProjectsCompleted
+        {
+            get => _projectsCompleted;
+            set
+            {
+                _projectsCompleted = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private string _projectsPaid = "00/00";
+        public string ProjectsPaid
+        {
+            get => _projectsPaid;
+            set
+            {
+                _projectsPaid = value;
+                OnPropertyChanged();
+            }
+        }
+
+        // Collections
+        public ObservableCollection<string> FilterOptions { get; } = new()
+        {
+            "This Month",
+            "This Year",
+            "All Time",
+            "Custom"
+        };
     }
 }
