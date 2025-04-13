@@ -7,7 +7,45 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="View\Projects\AddProjectWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Projects\EditProjectWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Projects\ProjectsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Transactions\AddTransactionWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Transactions\EditTransactionWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Transactions\TransactionsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Projects\AddProjectWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Projects\EditProjectWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Projects\ProjectsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Transactions\AddTransactionWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Transactions\EditTransactionWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Transactions\TransactionsView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

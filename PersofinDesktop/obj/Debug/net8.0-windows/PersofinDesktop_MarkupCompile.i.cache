@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Source\Repos\Persofin\PersofinDesktop\App.xaml
-11407045341
-
-71141290042
-198-556154604
-MainWindow.xaml;
+71905335141
+5-1474150287
+33791194354
+221724205791
+MainWindow.xaml;View\Projects\AddProjectWindow.xaml;View\Projects\EditProjectWindow.xaml;View\Projects\ProjectsView.xaml;View\Transactions\AddTransactionWindow.xaml;View\Transactions\EditTransactionWindow.xaml;View\Transactions\TransactionsView.xaml;
 
 False
 

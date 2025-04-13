@@ -1,4 +1,8 @@
-﻿using System.Text;
+﻿using iNKORE.UI.WPF.Helpers;
+using PersofinDesktop.View.Projects;
+using PersofinDesktop.View.Transactions;
+using PersofinDesktop.ViewModel;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +23,24 @@ namespace PersofinDesktop
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainViewModel();
+        }
+
+        private void TESTEST_SelectionChanged(iNKORE.UI.WPF.Modern.Controls.NavigationView sender, iNKORE.UI.WPF.Modern.Controls.NavigationViewSelectionChangedEventArgs args)
+        {
+            if (TESTEST.SelectedItem != null)
+            {
+                var prop = TESTEST.SelectedItem.GetProperty("Content").ToString();
+
+                if(prop == "Transactions")
+                {
+                    MainFrame.Content = new TransactionsView();
+                }
+                else if (prop == "Projects")
+                {
+                    MainFrame.Content = new ProjectsView();
+                }
+            }
         }
     }
 }

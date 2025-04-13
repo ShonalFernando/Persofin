@@ -9,6 +9,7 @@ namespace PersofinDesktop
     /// </summary>
     public partial class App : Application
     {
+        // https://icons8.com/icons/set/arrows--style-deco-color
     }
 
 }

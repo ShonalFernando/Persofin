@@ -3,16 +3,155 @@
   "WorkspaceRootPath": "D:\\Source\\Repos\\Persofin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\model\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\model\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\view\\projects\\projectsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\view\\projects\\projectsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\viewmodel\\transactions\\addtransactionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\viewmodel\\transactions\\addtransactionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\model\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\model\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\viewmodel\\projects\\businesslogic\\addprojectviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\viewmodel\\projects\\businesslogic\\addprojectviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\viewmodel\\projects\\businesslogic\\projectsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\viewmodel\\projects\\businesslogic\\projectsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\view\\projects\\addprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\view\\projects\\addprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\viewmodel\\projects\\datafields\\projectsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\viewmodel\\projects\\datafields\\projectsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\viewmodel\\projects\\validations\\projectsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\viewmodel\\projects\\validations\\projectsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\viewmodel\\projects\\commands\\projectsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\viewmodel\\projects\\commands\\projectsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\viewmodel\\projects\\datafields\\addprojectviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\viewmodel\\projects\\datafields\\addprojectviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\viewmodel\\projects\\validations\\addprojectviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\viewmodel\\projects\\validations\\addprojectviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\viewmodel\\projects\\commands\\addprojectviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\viewmodel\\projects\\commands\\addprojectviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\view\\projects\\addprojectwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\view\\projects\\addprojectwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\model\\transactionrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\model\\transactionrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\data\\repositories\\projectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\data\\repositories\\projectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\viewmodel\\transactions\\transactionsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\viewmodel\\transactions\\transactionsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\viewmodel\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\viewmodel\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\view\\transactions\\addtransactionwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\view\\transactions\\addtransactionwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\view\\transactions\\addtransactionwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\view\\transactions\\addtransactionwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\view\\projects\\editprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\view\\projects\\editprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\view\\projects\\projectsview.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\view\\projects\\projectsview.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\view\\projects\\editprojectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\view\\projects\\editprojectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\view\\transactions\\edittransactionwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\view\\transactions\\edittransactionwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\data\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\data\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\view\\transactions\\transactionsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\view\\transactions\\transactionsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\snira\\AppData\\Local\\Temp\\.vsdbgsrc\\fb15084c48174bff3023217d1ad58e803e1e4322708722f333707ce4bd465108\\ItemCollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\viewmodel\\transactions\\edittransactionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\viewmodel\\transactions\\edittransactionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\view\\transactions\\transactionsview.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\view\\transactions\\transactionsview.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\view\\transactions\\edittransactionwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\view\\transactions\\edittransactionwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\command\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\command\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\helper\\dbpathresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\helper\\dbpathresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|d:\\source\\repos\\persofin\\persofindesktop\\data\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B2F153-8002-4BF3-B958-62FDDC17D74E}|PersofinDesktop\\PersofinDesktop.csproj|solutionrelative:persofindesktop\\data\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +161,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,42 +172,8 @@
               "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Transaction.cs",
-              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Model\\Transaction.cs",
-              "RelativeDocumentMoniker": "PersofinDesktop\\Model\\Transaction.cs",
-              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Model\\Transaction.cs",
-              "RelativeToolTip": "PersofinDesktop\\Model\\Transaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T09:15:01.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "PersofinDesktop\\MainWindow.xaml",
-              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\MainWindow.xaml",
-              "RelativeToolTip": "PersofinDesktop\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-11T09:13:18.785Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "PersofinDesktop\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\MainWindow.xaml.cs",
-              "RelativeToolTip": "PersofinDesktop\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T09:13:10.409Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Bookmark",
@@ -76,15 +181,485 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProjectsViewModel.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Projects\\DataFields\\ProjectsViewModel.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\ViewModel\\Projects\\DataFields\\ProjectsViewModel.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Projects\\DataFields\\ProjectsViewModel.cs",
+              "RelativeToolTip": "PersofinDesktop\\ViewModel\\Projects\\DataFields\\ProjectsViewModel.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAAAI8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T15:46:24.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProjectsView.xaml",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Projects\\ProjectsView.xaml",
+              "RelativeDocumentMoniker": "PersofinDesktop\\View\\Projects\\ProjectsView.xaml",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Projects\\ProjectsView.xaml",
+              "RelativeToolTip": "PersofinDesktop\\View\\Projects\\ProjectsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-11T22:45:06.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProjectsViewModel.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Projects\\BusinessLogic\\ProjectsViewModel.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\ViewModel\\Projects\\BusinessLogic\\ProjectsViewModel.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Projects\\BusinessLogic\\ProjectsViewModel.cs",
+              "RelativeToolTip": "PersofinDesktop\\ViewModel\\Projects\\BusinessLogic\\ProjectsViewModel.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAiwJoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T08:45:54.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddProjectViewModel.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Projects\\BusinessLogic\\AddProjectViewModel.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\ViewModel\\Projects\\BusinessLogic\\AddProjectViewModel.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Projects\\BusinessLogic\\AddProjectViewModel.cs",
+              "RelativeToolTip": "PersofinDesktop\\ViewModel\\Projects\\BusinessLogic\\AddProjectViewModel.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:17:40.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Project.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Model\\Project.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\Model\\Project.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Model\\Project.cs",
+              "RelativeToolTip": "PersofinDesktop\\Model\\Project.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwBcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T09:05:07.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddTransactionViewModel.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Transactions\\AddTransactionViewModel.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\ViewModel\\Transactions\\AddTransactionViewModel.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Transactions\\AddTransactionViewModel.cs",
+              "RelativeToolTip": "PersofinDesktop\\ViewModel\\Transactions\\AddTransactionViewModel.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAJcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T11:32:26.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddProjectWindow.xaml",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Projects\\AddProjectWindow.xaml",
+              "RelativeDocumentMoniker": "PersofinDesktop\\View\\Projects\\AddProjectWindow.xaml",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Projects\\AddProjectWindow.xaml",
+              "RelativeToolTip": "PersofinDesktop\\View\\Projects\\AddProjectWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T13:28:53.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProjectsViewModel.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Projects\\Commands\\ProjectsViewModel.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\ViewModel\\Projects\\Commands\\ProjectsViewModel.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Projects\\Commands\\ProjectsViewModel.cs",
+              "RelativeToolTip": "PersofinDesktop\\ViewModel\\Projects\\Commands\\ProjectsViewModel.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T15:50:00.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProjectsViewModel.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Projects\\Validations\\ProjectsViewModel.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\ViewModel\\Projects\\Validations\\ProjectsViewModel.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Projects\\Validations\\ProjectsViewModel.cs",
+              "RelativeToolTip": "PersofinDesktop\\ViewModel\\Projects\\Validations\\ProjectsViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwA4AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T15:52:22.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AddProjectViewModel.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Projects\\DataFields\\AddProjectViewModel.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\ViewModel\\Projects\\DataFields\\AddProjectViewModel.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Projects\\DataFields\\AddProjectViewModel.cs",
+              "RelativeToolTip": "PersofinDesktop\\ViewModel\\Projects\\DataFields\\AddProjectViewModel.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAADwv6cAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:27:33.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddProjectViewModel.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Projects\\Validations\\AddProjectViewModel.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\ViewModel\\Projects\\Validations\\AddProjectViewModel.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Projects\\Validations\\AddProjectViewModel.cs",
+              "RelativeToolTip": "PersofinDesktop\\ViewModel\\Projects\\Validations\\AddProjectViewModel.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:52:35.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddProjectViewModel.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Projects\\Commands\\AddProjectViewModel.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\ViewModel\\Projects\\Commands\\AddProjectViewModel.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Projects\\Commands\\AddProjectViewModel.cs",
+              "RelativeToolTip": "PersofinDesktop\\ViewModel\\Projects\\Commands\\AddProjectViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:38:15.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TransactionRecord.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Model\\TransactionRecord.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\Model\\TransactionRecord.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Model\\TransactionRecord.cs",
+              "RelativeToolTip": "PersofinDesktop\\Model\\TransactionRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T09:15:01.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddProjectWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Projects\\AddProjectWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\View\\Projects\\AddProjectWindow.xaml.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Projects\\AddProjectWindow.xaml.cs",
+              "RelativeToolTip": "PersofinDesktop\\View\\Projects\\AddProjectWindow.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T13:29:27.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProjectRepository.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Data\\Repositories\\ProjectRepository.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\Data\\Repositories\\ProjectRepository.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Data\\Repositories\\ProjectRepository.cs",
+              "RelativeToolTip": "PersofinDesktop\\Data\\Repositories\\ProjectRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAjwBUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T08:54:35.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TransactionsViewModel.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Transactions\\TransactionsViewModel.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\ViewModel\\Transactions\\TransactionsViewModel.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Transactions\\TransactionsViewModel.cs",
+              "RelativeToolTip": "PersofinDesktop\\ViewModel\\Transactions\\TransactionsViewModel.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAKYAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T09:33:00.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\ViewModel\\ViewModelBase.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\ViewModelBase.cs",
+              "RelativeToolTip": "PersofinDesktop\\ViewModel\\ViewModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T09:33:58.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\ViewModel\\MainViewModel.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\MainViewModel.cs",
+              "RelativeToolTip": "PersofinDesktop\\ViewModel\\MainViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T20:42:21.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EditProjectWindow.xaml",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Projects\\EditProjectWindow.xaml",
+              "RelativeDocumentMoniker": "PersofinDesktop\\View\\Projects\\EditProjectWindow.xaml",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Projects\\EditProjectWindow.xaml",
+              "RelativeToolTip": "PersofinDesktop\\View\\Projects\\EditProjectWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T13:30:09.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AddTransactionWindow.xaml",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Transactions\\AddTransactionWindow.xaml",
+              "RelativeDocumentMoniker": "PersofinDesktop\\View\\Transactions\\AddTransactionWindow.xaml",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Transactions\\AddTransactionWindow.xaml",
+              "RelativeToolTip": "PersofinDesktop\\View\\Transactions\\AddTransactionWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-11T10:40:14.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AddTransactionWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Transactions\\AddTransactionWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\View\\Transactions\\AddTransactionWindow.xaml.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Transactions\\AddTransactionWindow.xaml.cs",
+              "RelativeToolTip": "PersofinDesktop\\View\\Transactions\\AddTransactionWindow.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwBsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T10:46:55.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProjectsView.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Projects\\ProjectsView.xaml.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\View\\Projects\\ProjectsView.xaml.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Projects\\ProjectsView.xaml.cs",
+              "RelativeToolTip": "PersofinDesktop\\View\\Projects\\ProjectsView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T13:41:23.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "PersofinDesktop\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T09:20:47.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EditProjectWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Projects\\EditProjectWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\View\\Projects\\EditProjectWindow.xaml.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Projects\\EditProjectWindow.xaml.cs",
+              "RelativeToolTip": "PersofinDesktop\\View\\Projects\\EditProjectWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T13:30:40.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EditTransactionWindow.xaml",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Transactions\\EditTransactionWindow.xaml",
+              "RelativeDocumentMoniker": "PersofinDesktop\\View\\Transactions\\EditTransactionWindow.xaml",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Transactions\\EditTransactionWindow.xaml",
+              "RelativeToolTip": "PersofinDesktop\\View\\Transactions\\EditTransactionWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-11T12:07:10.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TransactionRepository.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Data\\Repositories\\TransactionRepository.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\Data\\Repositories\\TransactionRepository.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Data\\Repositories\\TransactionRepository.cs",
+              "RelativeToolTip": "PersofinDesktop\\Data\\Repositories\\TransactionRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAawBAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T09:29:25.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "TransactionsView.xaml",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Transactions\\TransactionsView.xaml",
+              "RelativeDocumentMoniker": "PersofinDesktop\\View\\Transactions\\TransactionsView.xaml",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Transactions\\TransactionsView.xaml",
+              "RelativeToolTip": "PersofinDesktop\\View\\Transactions\\TransactionsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-11T09:36:21.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\MainWindow.xaml.cs",
+              "RelativeToolTip": "PersofinDesktop\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwB8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T09:13:10.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\App.xaml.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\App.xaml.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\App.xaml.cs",
+              "RelativeToolTip": "PersofinDesktop\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T14:57:04.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "PersofinDesktop\\MainWindow.xaml",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\MainWindow.xaml",
+              "RelativeToolTip": "PersofinDesktop\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-11T09:13:18.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ItemCollection.cs",
+              "DocumentMoniker": "C:\\Users\\snira\\AppData\\Local\\Temp\\.vsdbgsrc\\fb15084c48174bff3023217d1ad58e803e1e4322708722f333707ce4bd465108\\ItemCollection.cs",
+              "ToolTip": "C:\\Users\\snira\\AppData\\Local\\Temp\\.vsdbgsrc\\fb15084c48174bff3023217d1ad58e803e1e4322708722f333707ce4bd465108\\ItemCollection.cs [Read Only]",
+              "ViewState": "AgIAAIQFAAAAAAAAAAAawJkFAAADAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T19:43:24.86Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EditTransactionViewModel.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Transactions\\EditTransactionViewModel.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\ViewModel\\Transactions\\EditTransactionViewModel.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\ViewModel\\Transactions\\EditTransactionViewModel.cs",
+              "RelativeToolTip": "PersofinDesktop\\ViewModel\\Transactions\\EditTransactionViewModel.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAqwI8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:08:21.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "TransactionsView.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Transactions\\TransactionsView.xaml.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\View\\Transactions\\TransactionsView.xaml.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Transactions\\TransactionsView.xaml.cs",
+              "RelativeToolTip": "PersofinDesktop\\View\\Transactions\\TransactionsView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T09:36:53.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\App.xaml",
+              "RelativeDocumentMoniker": "PersofinDesktop\\App.xaml",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\App.xaml",
+              "RelativeToolTip": "PersofinDesktop\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-11T09:37:26.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "EditTransactionWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Transactions\\EditTransactionWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\View\\Transactions\\EditTransactionWindow.xaml.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Transactions\\EditTransactionWindow.xaml.cs",
+              "RelativeToolTip": "PersofinDesktop\\View\\Transactions\\EditTransactionWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:10:54.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Command\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\Command\\RelayCommand.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Command\\RelayCommand.cs",
+              "RelativeToolTip": "PersofinDesktop\\Command\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T09:34:40.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DBPathResolver.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Helper\\DBPathResolver.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\Helper\\DBPathResolver.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Helper\\DBPathResolver.cs",
+              "RelativeToolTip": "PersofinDesktop\\Helper\\DBPathResolver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T09:22:47.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "iRepository.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Data\\iRepository.cs",
+              "RelativeDocumentMoniker": "PersofinDesktop\\Data\\iRepository.cs",
+              "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\Data\\iRepository.cs",
+              "RelativeToolTip": "PersofinDesktop\\Data\\iRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T09:28:57.429Z"
             }
           ]
         }
