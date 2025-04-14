@@ -218,8 +218,6 @@ namespace PersofinDesktop.ViewModel.Projects
 
             Debug.WriteLine($"Complete: {completeCount}, OnProgress: {onProgressCount}");
 
-            MessageBox.Show($"{Projects.Count} {completeCount} {onProgressCount}");
-
             ProjectsPaid = $"{completeCount}/{completeCount + onProgressCount + submittedUnpaid}";
             ProjectsCompleted = $"{completeCount + submittedUnpaid}/{completeCount + onProgressCount + submittedUnpaid}";
         }

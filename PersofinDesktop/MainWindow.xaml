@@ -8,7 +8,7 @@
         ui:WindowHelper.UseModernWindowStyle="True"
         ui:WindowHelper.SystemBackdropType="Mica"
         mc:Ignorable="d"
-        Title="MainWindow" Height="768" Width="1366">
+        Title="Persofin | Freelancers Edition" Height="768" Width="1366">
     <ui:NavigationView IsPaneOpen="False" x:Name="TESTEST" SelectionChanged="TESTEST_SelectionChanged">
         <ui:NavigationView.MenuItems>
             <ui:NavigationViewItem Content="Home">

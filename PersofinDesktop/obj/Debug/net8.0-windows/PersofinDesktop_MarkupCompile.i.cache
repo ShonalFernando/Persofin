@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Source\Repos\Persofin\PersofinDesktop\App.xaml
 71905335141
 5-1474150287
-33791194354
+34-1503161499
 221724205791
 MainWindow.xaml;View\Projects\AddProjectWindow.xaml;View\Projects\EditProjectWindow.xaml;View\Projects\ProjectsView.xaml;View\Transactions\AddTransactionWindow.xaml;View\Transactions\EditTransactionWindow.xaml;View\Transactions\TransactionsView.xaml;
 
-True
+False
 
