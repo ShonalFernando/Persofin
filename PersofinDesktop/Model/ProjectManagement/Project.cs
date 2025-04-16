@@ -5,6 +5,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using PersofinDesktop.Model.ProjectManagement;
 
 namespace PersofinDesktop.Model
 {
@@ -37,5 +39,9 @@ namespace PersofinDesktop.Model
         public string Category { get; set; } = string.Empty;
 
         // Need to Impliment Location Mechanism
+        public string ProjectLocation { get; set; } = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+        // 💡 One-to-Many Navigation Property
+        public ICollection<ProjectPayment> Payments { get; set; } = new List<ProjectPayment>();
     }
 }

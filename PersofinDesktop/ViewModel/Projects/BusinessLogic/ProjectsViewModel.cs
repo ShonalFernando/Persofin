@@ -24,7 +24,7 @@ namespace PersofinDesktop.ViewModel.Projects
     {
         private readonly ProjectRepository _projectRepo;
 
-        public ProjectsViewModel()
+        public ProjectsViewModel(Action<int> navigateAction)
         {
             var context = new AppDbContext(DBPathResolver.ResolveDataBasePath());
             _projectRepo = new ProjectRepository(context);
@@ -32,6 +32,7 @@ namespace PersofinDesktop.ViewModel.Projects
             //AddTransactionCommand = new RelayCommand(async _ => await AddTransactionAsync(), _ => CanAddTransaction());
             //LoadTransactionsCommand = new RelayCommand(async _ => await LoadTransactionsAsync());
 
+            GoToPaymentsCommand = new RelayCommand(_ => navigateAction(SelectedProject.Id), CanGoToEdit);
             GotoAddProjectCommand = new RelayCommand(_ => GotoAuxTransactionWIndow(false));
             GotoEditProjectCommand = new RelayCommand(_ => GotoAuxTransactionWIndow(true), CanGoToEdit);
             DeleteProjectCommand = new RelayCommand(async _ => await DeleteTransaction(), CanGoToEdit);

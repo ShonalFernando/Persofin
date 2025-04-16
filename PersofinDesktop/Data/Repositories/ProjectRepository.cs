@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PersofinDesktop.Model;
+using PersofinDesktop.Model.ProjectManagement;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,5 +47,23 @@ namespace PersofinDesktop.Data.Repositories
         {
             await _context.SaveChangesAsync();
         }
+
+        // Extended methods handling relationships
+        public async Task<IEnumerable<ProjectPayment>> GetPaymentsForProjectAsync(int projectId)
+        {
+            return await _context.ProjectPayments
+                .Where(p => p.ProjectId == projectId)
+                .AsNoTracking()
+                .ToListAsync();
+        }
+
+        // Getting project with payments
+        public async Task<Project?> GetProjectWithPaymentsAsync(int id)
+        {
+            return await _context.Projects
+                .Include(p => p.Payments)
+                .FirstOrDefaultAsync(p => p.Id == id);
+        }
+
     }
 }

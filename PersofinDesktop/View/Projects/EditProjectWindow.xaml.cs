@@ -1,4 +1,5 @@
 ﻿using PersofinDesktop.Model;
+using PersofinDesktop.ViewModel.Projects.DataFields;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,7 @@ namespace PersofinDesktop.View.Projects
         public EditProjectWindow(Project project)
         {
             InitializeComponent();
+            DataContext = new EditProjectViewModel(Close,project);
         }
     }
 }

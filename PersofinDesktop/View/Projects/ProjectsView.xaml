@@ -50,7 +50,7 @@
         </StackPanel>
 
         <DataGrid ItemsSource="{Binding Projects}"
-          SelectedItem="{Binding SelectedTransaction, Mode=TwoWay}"
+          SelectedItem="{Binding SelectedProject, Mode=TwoWay}"
           AutoGenerateColumns="False"
           SelectionMode="Single"
           IsReadOnly="True"
@@ -84,6 +84,10 @@
             <Button Style="{DynamicResource ButtonPrimary}" Content="Add Project..." Width="125" Command="{Binding GotoAddProjectCommand}"/>
             <Button Style="{DynamicResource ButtonPrimary}" Content="Edit Project..." Width="125" Margin="10,0,0,0" Command="{Binding GotoEditProjectCommand}"/>
             <Button Style="{DynamicResource ButtonDanger}" Content="Delete Project" Width="125" Margin="10,0,0,0"  Command="{Binding DeleteProjectCommand}"/>
+            
+            <TextBlock Margin="10,6,10,0" Foreground="#3F9A9A9A">-------------------------------------------------------------</TextBlock>
+            <Button Style="{DynamicResource ButtonPrimary}" Content="Payments →" Width="125" Command="{Binding GoToPaymentsCommand}"/>
+
         </StackPanel>
     </Grid>
 </Page>

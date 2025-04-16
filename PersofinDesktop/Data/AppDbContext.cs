@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PersofinDesktop.Helper;
 using PersofinDesktop.Model;
+using PersofinDesktop.Model.ProjectManagement;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -17,8 +18,16 @@ namespace PersofinDesktop.Data
     {
         private readonly string _dbPath;
 
+        // Major Personal Modules
         public DbSet<TransactionRecord> Transactions { get; set; }
+
+        // Project Management Module
         public DbSet<Project> Projects { get; set; }
+        public DbSet<ProjectPayment> ProjectPayments { get; set; }
+
+        // Made-To-Order Module
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderPayment> OrderPayments{ get; set; }
 
         public AppDbContext(string dbPath)
         {

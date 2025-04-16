@@ -19,11 +19,12 @@ namespace PersofinDesktop.ViewModel.Projects
     {
         // To Perform Repository Actions
         private readonly ProjectRepository _projectRepo;
+        private readonly Action _closeWindowAction;
 
         /// <summary>
         ///  Constructor of Adding Projects View Model
         /// </summary>
-        public AddProjectViewModel()
+        public AddProjectViewModel(Action closeWindowAction)
         {
             // Bind the Command with the logic
             AddProjectCommand = new RelayCommand(_ => AddProject(), CanAddProject);
@@ -31,6 +32,9 @@ namespace PersofinDesktop.ViewModel.Projects
             // Initialze Repository
             var context = new AppDbContext(DBPathResolver.ResolveDataBasePath());
             _projectRepo = new ProjectRepository(context);
+
+            // Action Passed From the UI to View Model
+            _closeWindowAction = closeWindowAction;
         }
 
         /// <summary>
@@ -56,6 +60,8 @@ namespace PersofinDesktop.ViewModel.Projects
             // Add to Database
             await _projectRepo.AddAsync(newProject);
             await _projectRepo.SaveAsync();
+
+            _closeWindowAction();
         }
     }
 }

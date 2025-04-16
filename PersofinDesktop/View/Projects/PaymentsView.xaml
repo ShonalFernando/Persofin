@@ -1,0 +1,126 @@
+﻿<Page x:Class="PersofinDesktop.View.Projects.PaymentsView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PersofinDesktop.View.Projects"
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1366"
+      Title="ProjectsView">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Project Payments" Margin="10,10,10,10" FontSize="36" FontFamily="Segoe UI Light" Grid.Row="0" HorizontalAlignment="Left"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <StackPanel Orientation="Horizontal" ToolTip="Completed Payments for completed projects for the selected date range">
+                <TextBlock Text="{Binding ProjectsPaid, Mode=TwoWay}" FontSize="24" Margin="50,20,0,20"  MinWidth="100"/>
+                <Image   Source="/Assets/Icons/pay.png" Margin="10"/>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <!-- Year Selector -->
+            <TextBlock Height="18" Margin="10,0,0,0" Foreground="#3F9A9A9A">Payment Date</TextBlock>
+            <DatePicker Width="150" SelectedDate="{Binding FilterStartDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="10,5,10,5"/>
+
+            <TextBlock Margin="10,10,0,0" Foreground="#3F9A9A9A">----------------></TextBlock>
+
+            <Button Margin="10,0,0,0" Height="30" Width="120" Command="{Binding FilterProjectsCommand}" Content="Filter" Style="{DynamicResource ButtonPrimary}"/>
+
+
+        </StackPanel>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="11*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <DataGrid ItemsSource="{Binding Payments}"
+              SelectedItem="{Binding SelectedPayment, Mode=TwoWay}"
+              AutoGenerateColumns="False"
+              SelectionMode="Single"
+              IsReadOnly="True">
+                <DataGrid.Columns>
+                    <!-- ID Column -->
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto" Visibility="Hidden"/>
+
+
+                    <DataGridTextColumn Header="Amount" Binding="{Binding Amount, StringFormat={}{0:N2} LKR}" Width="*"/>
+                    <DataGridTextColumn Header="Payment Date" Binding="{Binding PaymentDate}" Width="*"/>
+                    <DataGridTextColumn Header="Notes" Binding="{Binding Notes}" Width="*"/>
+
+                </DataGrid.Columns>        
+            </DataGrid>
+
+            
+            <StackPanel Margin="10" Grid.Column="1">
+                <TextBlock Text="Payment ID" HorizontalAlignment="Left" Foreground="#FF3E3E3E"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox MinWidth="170"  
+                       HorizontalAlignment="Left" Text="{Binding PaymentId}" IsEnabled="{Binding IDFieldEnabled}"
+                       Margin="0,5,0,0"/>
+                    <Button Style="{DynamicResource ButtonDashedInfo}" 
+                        Content="New*" 
+                        Margin="10,5,0,0" 
+                        Width="70"
+                        HorizontalAlignment="Center" 
+                        Command="{Binding ClearEditCommand}"/>
+                </StackPanel>
+
+
+                <TextBlock Text="Amount" HorizontalAlignment="Left" Foreground="#FF3E3E3E" Margin="0,5,0,0"/>
+                <TextBox Width="250" 
+            Text="{Binding Amount, Mode=TwoWay}" 
+            HorizontalAlignment="Left" 
+            Margin="0,5,0,0"/>
+                
+                <TextBlock Text="Payment Date" HorizontalAlignment="Left" Foreground="#FF3E3E3E"/>
+                <DatePicker Width="250" 
+                SelectedDate="{Binding PaymentDate, Mode=TwoWay}" 
+                HorizontalAlignment="Left" 
+                Margin="0,5,0,0"/>
+
+
+                <TextBlock Text="Notes" HorizontalAlignment="Left" Foreground="#FF3E3E3E" Margin="0,5,0,0"/>
+                <TextBox Width="250" 
+             Text="{Binding Notes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+             HorizontalAlignment="Left" 
+             Margin="0,5,0,0"
+             AcceptsReturn="True"
+             MinLines="4"
+             MinHeight="60"/>
+
+
+                <Button Style="{DynamicResource ButtonPrimary}" 
+            Content="Update Payment" 
+            Margin="0,25,10,0" 
+            Width="150"
+            HorizontalAlignment="Left" 
+            Visibility="{Binding IsEditButtonVisible}"            
+            Command="{Binding AddTransactionCommand}"/>
+
+                <Button Style="{DynamicResource ButtonPrimary}" 
+            Content="Add New Payment" 
+            Margin="0,10,10,0" 
+            Width="150"
+            HorizontalAlignment="Left" 
+            Visibility="{Binding IsAddButtonVisible}"            
+            Command="{Binding AddCommand}"/>
+            </StackPanel>
+        </Grid>
+        
+
+
+        <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="10">
+            <Button Style="{DynamicResource ButtonPrimary}" Content="← Back to Project" Width="125" Command="{Binding GotoAddProjectCommand}"/>
+            <Button Style="{DynamicResource ButtonPrimary}" Content="Edit Project" Width="125" Margin="10,0,0,0" Command="{Binding GotoEditProjectCommand}"/>
+            <Button Style="{DynamicResource ButtonDanger}" Content="Delete Payment" Width="125" Margin="10,0,0,0"  Command="{Binding DeleteProjectCommand}"/>
+
+        </StackPanel>
+    </Grid>
+</Page>

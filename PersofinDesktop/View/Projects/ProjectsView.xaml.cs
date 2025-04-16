@@ -1,4 +1,6 @@
-﻿using PersofinDesktop.ViewModel.Projects;
+﻿using iNKORE.UI.WPF.Modern.Controls;
+using PersofinDesktop.View.Transactions;
+using PersofinDesktop.ViewModel.Projects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Page = System.Windows.Controls.Page;
 
 namespace PersofinDesktop.View.Projects
 {
@@ -24,7 +27,10 @@ namespace PersofinDesktop.View.Projects
         public ProjectsView()
         {
             InitializeComponent();
-            DataContext = new ProjectsViewModel();
+            DataContext = new ProjectsViewModel((projectId) =>
+            {
+                NavigationService?.Navigate(new PaymentsView(projectId));
+            });
         }
     }
 }

@@ -5,45 +5,115 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PersofinDesktop.View.Projects"
         mc:Ignorable="d"
-        Title="EditProjectWindow" Height="420" Width="400" ResizeMode="NoResize" ShowInTaskbar="False" >
-    <StackPanel Margin="10">
-        <TextBlock Text="Date of Transaction" HorizontalAlignment="Left" Foreground="#FF3E3E3E"/>
-        <DatePicker Width="250" 
-                SelectedDate="{Binding DateOfTransaction, Mode=TwoWay}" 
-                HorizontalAlignment="Left" 
-                Margin="0,5,0,0"/>
+        Title="EditProjectWindow"  Height="680" Width="560" ResizeMode="NoResize" ShowInTaskbar="False" >
+    <ScrollViewer>
+        <StackPanel Margin="10">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel >
+                    <TextBlock Text="Starting Date" HorizontalAlignment="Left" Foreground="#FF3E3E3E"/>
+                    <DatePicker Width="250" 
+                        SelectedDate="{Binding DateStart, Mode=TwoWay}" 
+                        HorizontalAlignment="Left" 
+                        Margin="0,5,0,0"/>
+                </StackPanel>
 
-        <TextBlock Text="Description" HorizontalAlignment="Left" Foreground="#FF3E3E3E" Margin="0,15,0,0"/>
-        <TextBox Width="250" 
-             Text="{Binding Description, Mode=TwoWay}" 
+                <StackPanel Margin="20,0,0,0">
+                    <TextBlock Text="Ending Date" HorizontalAlignment="Left" Foreground="#FF3E3E3E"/>
+                    <DatePicker Width="250" 
+                        SelectedDate="{Binding DateEnd, Mode=TwoWay}" 
+                        HorizontalAlignment="Left" 
+                        Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </StackPanel>
+
+
+            <TextBlock Text="Total Budget" HorizontalAlignment="Left" Foreground="#FF3E3E3E" Margin="0,15,0,0"/>
+            <TextBox Width="250" 
+             Text="{Binding TotalBudget, Mode=TwoWay}" 
              HorizontalAlignment="Left" 
              Margin="0,5,0,0"/>
 
-        <TextBlock Text="Amount" HorizontalAlignment="Left" Foreground="#FF3E3E3E" Margin="0,15,0,0"/>
-        <TextBox Width="250" 
-             Text="{Binding Amount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+            <TextBlock Text="Title" HorizontalAlignment="Left" Foreground="#FF3E3E3E" Margin="0,15,0,0"/>
+            <TextBox Width="250" 
+             Text="{Binding Title, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
              HorizontalAlignment="Left" 
              Margin="0,5,0,0"/>
 
-        <TextBlock Text="Transaction Type" HorizontalAlignment="Left" Foreground="#FF3E3E3E" Margin="0,15,0,0"/>
-        <ComboBox Width="250" 
-              ItemsSource="{Binding TransactionTypes}" 
-              SelectedItem="{Binding TransactionType, Mode=TwoWay}" 
-              HorizontalAlignment="Left" 
-              Margin="0,5,0,0"/>
 
-
-        <TextBlock Text="Category" HorizontalAlignment="Left" Foreground="#FF3E3E3E" Margin="0,15,0,0"/>
-        <ComboBox Width="250" 
+            <TextBlock Text="Category" HorizontalAlignment="Left" Foreground="#FF3E3E3E" Margin="0,15,0,0"/>
+            <ComboBox Width="250" 
               ItemsSource="{Binding Categories}" 
               SelectedItem="{Binding Category, Mode=TwoWay}" 
               HorizontalAlignment="Left" 
               Margin="0,5,0,0"/>
 
-        <Button Style="{DynamicResource ButtonPrimary}" 
-            Content="Edit Transaction" 
+            <TextBlock Text="Buget Information" HorizontalAlignment="Left" Foreground="#FF3E3E3E" Margin="0,15,0,0"/>
+            <TextBox Width="250" 
+             Text="{Binding BudgetInfo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+             HorizontalAlignment="Left" 
+             Margin="0,5,0,0"
+             AcceptsReturn="True"
+             MinLines="3"
+                     MinHeight="60"/>
+
+            <StackPanel Orientation="Horizontal">
+                <StackPanel>
+                    <TextBlock Text="Requirements" HorizontalAlignment="Left" Foreground="#FF3E3E3E" Margin="0,15,0,0"/>
+                    <TextBox Width="250" 
+                 Text="{Binding Requirements, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                 HorizontalAlignment="Left" 
+                 Margin="0,5,0,0"
+                 AcceptsReturn="True"
+                 MinHeight="60"            
+                 MinLines="3"/>
+                </StackPanel>
+
+
+                <StackPanel Margin="20,0,0,0">
+                    <TextBlock Text="Project Breakdown" HorizontalAlignment="Left" Foreground="#FF3E3E3E" Margin="0,15,0,0"/>
+                    <TextBox Width="250" 
+             Text="{Binding Amount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+             HorizontalAlignment="Left" 
+             Margin="0,5,0,0"
+             AcceptsReturn="True"
+             MinLines="3"
+                             MinHeight="60"  />
+                </StackPanel>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" Margin="0,15,0,0">
+                <StackPanel>
+                    <TextBlock Text="Progress" HorizontalAlignment="Left" Foreground="#FF3E3E3E"/>
+                    <TextBox Width="250" 
+                         Text="{Binding Progress, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                         HorizontalAlignment="Left" 
+                         Margin="0,5,0,0"
+                         AcceptsReturn="True"
+                         MinLines="3"
+                         MinHeight="60"  />
+                </StackPanel>
+
+
+                <StackPanel Margin="20,0,0,0">
+                    <TextBlock Text="Status" HorizontalAlignment="Left" Foreground="#FF3E3E3E"/>
+                    <ComboBox Width="250" 
+                      ItemsSource="{Binding ProjectStatuses}" 
+                      SelectedItem="{Binding ProjectStatus, Mode=TwoWay}" 
+                      HorizontalAlignment="Left" 
+                      Margin="0,5,0,0"/>
+                </StackPanel>
+            </StackPanel>
+
+
+            <TextBlock Margin="0,10,0,0" Foreground="#FFAF1212" Text="{Binding ValidationMessage}"/>
+
+            <Button Style="{DynamicResource ButtonPrimary}" 
+            Content="Update Transaction" 
             Margin="0,25,10,0" 
             HorizontalAlignment="Left" 
-            Command="{Binding EditTransactionCommand}"/>
-    </StackPanel>
+            Command="{Binding EditProjectCommand}"/>
+        </StackPanel>
+    </ScrollViewer>
 </Window>

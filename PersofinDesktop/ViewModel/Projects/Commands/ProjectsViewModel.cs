@@ -20,9 +20,12 @@ namespace PersofinDesktop.ViewModel.Projects
 {
     internal partial class ProjectsViewModel : ViewModelBase
     {
+        public ICommand GoToPaymentsCommand { get; }
         public ICommand GotoAddProjectCommand { get; }
         public ICommand GotoEditProjectCommand { get; }
         public ICommand DeleteProjectCommand { get; }
         public ICommand FilterProjectsCommand { get; }
+
+
     }
 }

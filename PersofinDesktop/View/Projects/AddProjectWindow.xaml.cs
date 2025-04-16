@@ -24,7 +24,7 @@ namespace PersofinDesktop.View.Projects
         public AddProjectWindow()
         {
             InitializeComponent();
-            DataContext = new AddProjectViewModel();
+            DataContext = new AddProjectViewModel(Close);
         }
     }
 }
