@@ -90,23 +90,45 @@ namespace PersofinDesktop.ViewModel.Projects
         }
 
         // Optional: selected Project object, useful for UI dropdown binding
-        private Project? _selectedProject;
-        public Project? SelectedProject
+        private ProjectPayment? _selectedPayment;
+        public ProjectPayment? SelectedPayment
         {
-            get => _selectedProject;
+            get => _selectedPayment;
             set
             {
-                _selectedProject = value;
+                _selectedPayment = value;
                 OnPropertyChanged();
 
                 // Automatically update foreign key when project selected
-                if (_selectedProject != null)
-                    ProjectId = _selectedProject.Id;
+                if (_selectedPayment != null)
+                    ProjectId = _selectedPayment.ProjectId;
+            }
+        }
+        // For Filters
+        private DateTime _dateSelected;
+        public DateTime DateSelected
+        {
+            get => _dateSelected;
+            set
+            {
+                _dateSelected = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private bool _showALl;
+        public bool ShowAll
+        {
+            get => _showALl;
+            set
+            {
+                _showALl = value;
+                OnPropertyChanged();
+                ShowAllExecute();
             }
         }
 
         // UI Helper Fields and Properties
-
         private bool _idFieldEnabled;
         public bool IDFieldEnabled
         {

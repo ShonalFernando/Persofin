@@ -26,5 +26,6 @@ namespace PersofinDesktop.View.Projects
             InitializeComponent();
             DataContext = new ProjectPaymentViewModel(projectId);
         }
+
     }
 }

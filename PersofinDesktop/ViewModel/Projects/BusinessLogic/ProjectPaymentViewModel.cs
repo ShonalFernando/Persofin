@@ -1,4 +1,5 @@
-﻿using PersofinDesktop.Command;
+﻿using Microsoft.EntityFrameworkCore;
+using PersofinDesktop.Command;
 using PersofinDesktop.Data;
 using PersofinDesktop.Data.Repositories;
 using PersofinDesktop.Helper;
@@ -19,20 +20,34 @@ namespace PersofinDesktop.ViewModel.Projects
         private bool _isEditMode;
         private readonly ProjectPaymentRepository _projectPayRepo;
         private readonly ProjectRepository _projectRepo;
+        private int _projectID;
 
         public ProjectPaymentViewModel(int projectId)
         {
-            ClearEditCommand = new RelayCommand(_ => ClearFields());//, CanGoToEdit);
-            AddCommand = new RelayCommand(_ => ExecuteAdd());//, CanGoToEdit);
+            _payments = null!;
+            _payment = null!;
+
+            DateSelected = DateTime.Now;
+
+            ClearEditCommand = new RelayCommand(_ => ClearFields());
+            AddCommand = new RelayCommand(_ => ExecuteAdd());
+            GoToEditCommand = new RelayCommand(_ => GoToEdit(), CanEditPayment);
+            FilterCommand = new RelayCommand(_ => FilterExecute(true));
+            UpdateCommand = new RelayCommand(_ => ExecuteUpdate());
+            DeleteCommand = new RelayCommand(_ => ExecuteDelete());
 
             var context = new AppDbContext(DBPathResolver.ResolveDataBasePath());
             _projectPayRepo = new ProjectPaymentRepository(context);
             _projectRepo = new ProjectRepository(context);
 
+            _isEditMode = false;
+            ToggleAddEdit();
+
             Payment = new ProjectPayment();
 
-            ProjectId = projectId;
+            ProjectId = _projectID = projectId;
             RefreshPayments();
+            ShowAll = true;
         }
 
 
@@ -40,10 +55,89 @@ namespace PersofinDesktop.ViewModel.Projects
         private async void ExecuteAdd()
         {
             MapToData(false);
-            MessageBox.Show($"{Payment.ProjectId}");
+
             await _projectPayRepo.AddAsync(Payment);
             await _projectPayRepo.SaveAsync();
+
             RefreshPayments();
+        }
+
+        private async void ExecuteUpdate()
+        {
+            MapToData(false);
+
+            var _tempPID = ProjectId;
+
+            var context = new AppDbContext(DBPathResolver.ResolveDataBasePath());
+            var _projectPayUpRepo = new ProjectPaymentRepository(context);
+
+            await _projectPayUpRepo.UpdateAsync(Payment);
+            await _projectPayUpRepo.SaveAsync();
+
+            _isEditMode = false;
+
+            ToggleAddEdit();
+            RefreshPayments();
+            ClearFields();
+
+            ProjectId = _tempPID;
+        }
+
+        private async void ExecuteDelete()
+        {
+            var _tempPID = ProjectId;
+
+            if (SelectedPayment is not null)
+            {
+                MapToData(false);
+
+                var context = new AppDbContext(DBPathResolver.ResolveDataBasePath());
+                var _projectPayDelRepo = new ProjectPaymentRepository(context);
+
+                await _projectPayDelRepo.DeleteAsync(SelectedPayment);
+                await _projectPayDelRepo.SaveAsync();
+
+                ProjectId = _tempPID;
+                RefreshPayments(); 
+            }
+        }
+
+        private async void FilterExecute(bool isFromCommand)
+        {
+            if (ShowAll && isFromCommand)
+            {
+                ShowAll = false;
+            }
+                Payments.Clear();
+                Payments = new ObservableCollection<ProjectPayment>(
+                    (await _projectPayRepo.GetAllAsync())
+                    .Where(f => f.PaymentDate.Date == DateSelected.Date)
+                    .ToList());
+        }
+
+        private void ShowAllExecute()
+        {
+            if (ShowAll)
+            {
+                Payments.Clear();
+                RefreshPayments();
+            }
+            else
+            {
+                FilterExecute(false);
+            }
+        }
+
+        private void GoToEdit()
+        {
+            _isEditMode = true;
+
+            ToggleAddEdit();
+
+            if (SelectedPayment is not null)
+                Payment = SelectedPayment;
+
+            MapToData(true);
         }
 
         // Helpers - Not Completed

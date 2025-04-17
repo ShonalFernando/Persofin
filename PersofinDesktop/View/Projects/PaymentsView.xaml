@@ -26,13 +26,15 @@
         <StackPanel Orientation="Horizontal" Grid.Row="1">
             <!-- Year Selector -->
             <TextBlock Height="18" Margin="10,0,0,0" Foreground="#3F9A9A9A">Payment Date</TextBlock>
-            <DatePicker Width="150" SelectedDate="{Binding FilterStartDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="10,5,10,5"/>
+            <DatePicker Width="150" SelectedDate="{Binding DateSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="10,5,10,5"/>
 
             <TextBlock Margin="10,10,0,0" Foreground="#3F9A9A9A">----------------></TextBlock>
 
-            <Button Margin="10,0,0,0" Height="30" Width="120" Command="{Binding FilterProjectsCommand}" Content="Filter" Style="{DynamicResource ButtonPrimary}"/>
+            <Button Margin="10,0,0,0" Height="30" Width="120" Command="{Binding FilterCommand}" Content="Filter" Style="{DynamicResource ButtonPrimary}"/>
+            
+            <TextBlock Margin="10,10,0,0" Foreground="#3F9A9A9A">---- or ----</TextBlock>
 
-
+            <ToggleButton Margin="10,0,0,0" Width="120" IsChecked="{Binding ShowAll}" Content="Show All" Style="{DynamicResource ToggleButtonPrimary}"/>
         </StackPanel>
 
         <Grid Grid.Row="2">
@@ -40,22 +42,22 @@
                 <ColumnDefinition Width="11*"/>
                 <ColumnDefinition Width="3*"/>
             </Grid.ColumnDefinitions>
-            <DataGrid ItemsSource="{Binding Payments}"
-              SelectedItem="{Binding SelectedPayment, Mode=TwoWay}"
-              AutoGenerateColumns="False"
-              SelectionMode="Single"
-              IsReadOnly="True">
-                <DataGrid.Columns>
-                    <!-- ID Column -->
-                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto" Visibility="Hidden"/>
+                <DataGrid ItemsSource="{Binding Payments}"
+                  SelectedItem="{Binding SelectedPayment, Mode=TwoWay}"
+                  AutoGenerateColumns="False"
+                  SelectionMode="Single"
+                  IsReadOnly="True">
+                    <DataGrid.Columns>
+                        <!-- ID Column -->
+                        <DataGridTextColumn Header="ID" Binding="{Binding PaymentId}" Width="Auto"/>
 
 
-                    <DataGridTextColumn Header="Amount" Binding="{Binding Amount, StringFormat={}{0:N2} LKR}" Width="*"/>
-                    <DataGridTextColumn Header="Payment Date" Binding="{Binding PaymentDate}" Width="*"/>
-                    <DataGridTextColumn Header="Notes" Binding="{Binding Notes}" Width="*"/>
+                        <DataGridTextColumn Header="Amount" Binding="{Binding Amount, StringFormat={}{0:N2} LKR}" Width="*"/>
+                        <DataGridTextColumn Header="Payment Date" Binding="{Binding PaymentDate}" Width="*"/>
+                        <DataGridTextColumn Header="Notes" Binding="{Binding Notes}" Width="*"/>
 
-                </DataGrid.Columns>        
-            </DataGrid>
+                    </DataGrid.Columns>        
+                </DataGrid>
 
             
             <StackPanel Margin="10" Grid.Column="1">
@@ -102,11 +104,11 @@
             Width="150"
             HorizontalAlignment="Left" 
             Visibility="{Binding IsEditButtonVisible}"            
-            Command="{Binding AddTransactionCommand}"/>
+            Command="{Binding UpdateCommand}"/>
 
                 <Button Style="{DynamicResource ButtonPrimary}" 
             Content="Add New Payment" 
-            Margin="0,10,10,0" 
+            Margin="0,25,10,0" 
             Width="150"
             HorizontalAlignment="Left" 
             Visibility="{Binding IsAddButtonVisible}"            
@@ -118,8 +120,8 @@
 
         <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="10">
             <Button Style="{DynamicResource ButtonPrimary}" Content="← Back to Project" Width="125" Command="{Binding GotoAddProjectCommand}"/>
-            <Button Style="{DynamicResource ButtonPrimary}" Content="Edit Project" Width="125" Margin="10,0,0,0" Command="{Binding GotoEditProjectCommand}"/>
-            <Button Style="{DynamicResource ButtonDanger}" Content="Delete Payment" Width="125" Margin="10,0,0,0"  Command="{Binding DeleteProjectCommand}"/>
+            <Button Style="{DynamicResource ButtonPrimary}" Content="Edit Project" Width="125" Margin="10,0,0,0" Command="{Binding GoToEditCommand}"/>
+            <Button Style="{DynamicResource ButtonDanger}" Content="Delete Payment" Width="125" Margin="10,0,0,0"  Command="{Binding DeleteCommand}"/>
 
         </StackPanel>
     </Grid>
