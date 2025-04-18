@@ -24,6 +24,8 @@ namespace PersofinDesktop.Data
         // Project Management Module
         public DbSet<Project> Projects { get; set; }
         public DbSet<ProjectPayment> ProjectPayments { get; set; }
+        public DbSet<ProjectTask> ProjectTasks { get; set; }
+        public DbSet<ProjectResource> ProjectResources { get; set; }
 
         // Made-To-Order Module
         public DbSet<Order> Orders { get; set; }

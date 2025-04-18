@@ -1,15 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PersofinDesktop.Model;
 using PersofinDesktop.Model.ProjectManagement;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PersofinDesktop.Data.Repositories
 {
-    internal class ProjectRepository : IRepository<Project>
+    internal class ProjectRepository : IRepository<PersofinDesktop.Model.Project>
     {
         private readonly AppDbContext _context;
 
@@ -64,6 +59,5 @@ namespace PersofinDesktop.Data.Repositories
                 .Include(p => p.Payments)
                 .FirstOrDefaultAsync(p => p.Id == id);
         }
-
     }
 }

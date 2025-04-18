@@ -43,5 +43,7 @@ namespace PersofinDesktop.Model
 
         // 💡 One-to-Many Navigation Property
         public ICollection<ProjectPayment> Payments { get; set; } = new List<ProjectPayment>();
+        public ICollection<ProjectTask> Tasks { get; set; } = new List<ProjectTask>();
+        public ICollection<ProjectResource> Resources { get; set; } = new List<ProjectResource>();
     }
 }

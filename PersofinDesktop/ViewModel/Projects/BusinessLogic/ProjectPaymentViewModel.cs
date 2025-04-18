@@ -85,20 +85,23 @@ namespace PersofinDesktop.ViewModel.Projects
 
         private async void ExecuteDelete()
         {
-            var _tempPID = ProjectId;
-
-            if (SelectedPayment is not null)
+            if (MessageBox.Show("Are you sure you want to delete this Payment?","Project Payments",MessageBoxButton.YesNo,MessageBoxImage.Warning) == MessageBoxResult.Yes)
             {
-                MapToData(false);
+                var _tempPID = ProjectId;
 
-                var context = new AppDbContext(DBPathResolver.ResolveDataBasePath());
-                var _projectPayDelRepo = new ProjectPaymentRepository(context);
+                if (SelectedPayment is not null)
+                {
+                    MapToData(false);
 
-                await _projectPayDelRepo.DeleteAsync(SelectedPayment);
-                await _projectPayDelRepo.SaveAsync();
+                    var context = new AppDbContext(DBPathResolver.ResolveDataBasePath());
+                    var _projectPayDelRepo = new ProjectPaymentRepository(context);
 
-                ProjectId = _tempPID;
-                RefreshPayments(); 
+                    await _projectPayDelRepo.DeleteAsync(SelectedPayment);
+                    await _projectPayDelRepo.SaveAsync();
+
+                    ProjectId = _tempPID;
+                    RefreshPayments();
+                } 
             }
         }
 
