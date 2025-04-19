@@ -15,7 +15,7 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Project Payments" Margin="10,10,10,10" FontSize="36" FontFamily="Segoe UI Light" Grid.Row="0" HorizontalAlignment="Left"/>
+        <TextBlock Text="Project Resources" Margin="10,10,10,10" FontSize="36" FontFamily="Segoe UI Light" Grid.Row="0" HorizontalAlignment="Left"/>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
             <StackPanel Orientation="Horizontal" ToolTip="Completed Payments for completed projects for the selected date range">
                 <TextBlock Text="{Binding ProjectsPaid, Mode=TwoWay}" FontSize="24" Margin="50,20,0,20"  MinWidth="100"/>
@@ -99,7 +99,7 @@
 
 
                 <Button Style="{DynamicResource ButtonPrimary}" 
-        Content="Update Payment" 
+        Content="Update Resource Data" 
         Margin="0,25,10,0" 
         Width="150"
         HorizontalAlignment="Left" 
@@ -107,7 +107,7 @@
         Command="{Binding UpdateCommand}"/>
 
                 <Button Style="{DynamicResource ButtonPrimary}" 
-        Content="Add New Payment" 
+        Content="Add New Resource" 
         Margin="0,25,10,0" 
         Width="150"
         HorizontalAlignment="Left" 
@@ -119,10 +119,9 @@
 
 
         <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="10">
-            <Button Style="{DynamicResource ButtonPrimary}" Content="← Back to Project" Width="125" Command="{Binding GotoAddProjectCommand}"/>
-            <Button Style="{DynamicResource ButtonPrimary}" Content="Edit Project" Width="125" Margin="10,0,0,0" Command="{Binding GoToEditCommand}"/>
-            <Button Style="{DynamicResource ButtonDanger}" Content="Delete Payment" Width="125" Margin="10,0,0,0"  Command="{Binding DeleteCommand}"/>
-
+            <Button Style="{DynamicResource ButtonPrimary}" Content="← Back to Project" Width="135" Command="{Binding GotoAddProjectCommand}"/>
+            <Button Style="{DynamicResource ButtonPrimary}" Content="Edit Resource Data" Width="135" Margin="10,0,0,0" Command="{Binding GoToEditCommand}"/>
+            <Button Style="{DynamicResource ButtonDanger}" Content="Delete Resource Data" Width="135" Margin="10,0,0,0"  Command="{Binding DeleteCommand}"/>
         </StackPanel>
     </Grid>
 </Page>

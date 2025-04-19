@@ -29,7 +29,8 @@ namespace PersofinDesktop.View.Projects
             InitializeComponent();
             DataContext = new ProjectsViewModel((projectId) =>
             {
-                NavigationService?.Navigate(new PaymentsView(projectId));
+                //NavigationService?.Navigate(new PaymentsView(projectId));
+                NavigationService?.Navigate(new ProjectTaskView());
             });
         }
     }

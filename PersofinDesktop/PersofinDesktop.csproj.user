@@ -22,6 +22,9 @@
     <Compile Update="View\Projects\ProjectsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\Projects\ProjectTaskView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Transactions\AddTransactionWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -29,6 +32,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\Transactions\TransactionsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UserControls\GanntChart.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -51,6 +57,9 @@
     <Page Update="View\Projects\ProjectsView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\Projects\ProjectTaskView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\Transactions\AddTransactionWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -58,6 +67,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Transactions\TransactionsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UserControls\GanntChart.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

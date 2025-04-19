@@ -11,5 +11,4 @@ namespace PersofinDesktop
     {
         // https://icons8.com/icons/set/arrows--style-deco-color
     }
-
 }

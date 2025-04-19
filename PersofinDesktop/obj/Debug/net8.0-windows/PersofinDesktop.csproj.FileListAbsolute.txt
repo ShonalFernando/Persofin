@@ -173,3 +173,8 @@ D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\View\Projects\
 D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\View\Projects\PaymentsView.baml
 D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\View\Projects\ProjectResourceView.g.cs
 D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\View\Projects\ProjectResourceView.baml
+D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\View\Projects\ProjectTaskView.g.cs
+D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\View\UserControls\GanntChart.g.cs
+D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\View\Projects\ProjectTaskView.baml
+D:\Source\Repos\Persofin\PersofinDesktop\obj\Debug\net8.0-windows\View\UserControls\GanntChart.baml

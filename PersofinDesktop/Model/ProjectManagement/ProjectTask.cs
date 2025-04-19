@@ -20,6 +20,9 @@ namespace PersofinDesktop.Model.ProjectManagement
         public string Description { get; set; } = string.Empty;
 
         [Required]
+        public DateTime StartDate { get; set; }
+
+        [Required]
         public DateTime DueDate { get; set; }
 
         public bool IsCompleted { get; set; } = false;
