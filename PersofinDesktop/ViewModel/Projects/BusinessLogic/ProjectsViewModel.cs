@@ -17,6 +17,7 @@ using System.Windows;
 using PersofinDesktop.View.Projects;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Security.Cryptography.Xml;
+using PersofinDesktop.Constants;
 
 namespace PersofinDesktop.ViewModel.Projects
 {
@@ -24,7 +25,7 @@ namespace PersofinDesktop.ViewModel.Projects
     {
         private readonly ProjectRepository _projectRepo;
 
-        public ProjectsViewModel(Action<int> navigateAction)
+        public ProjectsViewModel(Action<PageRegistry, int> navigateAction)
         {
             var context = new AppDbContext(DBPathResolver.ResolveDataBasePath());
             _projectRepo = new ProjectRepository(context);
@@ -32,7 +33,9 @@ namespace PersofinDesktop.ViewModel.Projects
             //AddTransactionCommand = new RelayCommand(async _ => await AddTransactionAsync(), _ => CanAddTransaction());
             //LoadTransactionsCommand = new RelayCommand(async _ => await LoadTransactionsAsync());
 
-            GoToPaymentsCommand = new RelayCommand(_ => navigateAction(SelectedProject.Id), CanGoToEdit);
+            GoToPaymentsCommand = new RelayCommand(_ => navigateAction(PageRegistry.Projects_PaymentsView ,SelectedProject?.Id??0), CanGoToEdit);
+            GoToResourcesCommand = new RelayCommand(_ => navigateAction(PageRegistry.Project_ResourceView ,SelectedProject?.Id??0), CanGoToEdit);
+            GoToTasksCommand = new RelayCommand(_ => navigateAction(PageRegistry.Projects_TasksView ,SelectedProject?.Id??0), CanGoToEdit);
             GotoAddProjectCommand = new RelayCommand(_ => GotoAuxTransactionWIndow(false));
             GotoEditProjectCommand = new RelayCommand(_ => GotoAuxTransactionWIndow(true), CanGoToEdit);
             DeleteProjectCommand = new RelayCommand(async _ => await DeleteTransaction(), CanGoToEdit);

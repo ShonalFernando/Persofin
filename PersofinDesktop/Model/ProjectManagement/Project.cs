@@ -42,7 +42,7 @@ namespace PersofinDesktop.Model
         public string ProjectLocation { get; set; } = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
         // 💡 One-to-Many Navigation Property
-        public ICollection<ProjectPayment> Payments { get; set; } = new List<ProjectPayment>();
+        public ICollection<ProjectPaymentView> Payments { get; set; } = new List<ProjectPaymentView>();
         public ICollection<ProjectTask> Tasks { get; set; } = new List<ProjectTask>();
         public ICollection<ProjectResource> Resources { get; set; } = new List<ProjectResource>();
     }

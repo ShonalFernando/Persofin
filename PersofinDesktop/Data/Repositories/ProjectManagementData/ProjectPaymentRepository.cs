@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PersofinDesktop.Data.Repositories
 {
-    internal class ProjectPaymentRepository : IRepository<ProjectPayment>
+    internal class ProjectPaymentRepository : IRepository<ProjectPaymentView>
     {
         private readonly AppDbContext _context;
 
@@ -17,27 +17,27 @@ namespace PersofinDesktop.Data.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<ProjectPayment>> GetAllAsync()
+        public async Task<IEnumerable<ProjectPaymentView>> GetAllAsync()
         {
             return await _context.ProjectPayments.AsNoTracking().ToListAsync();
         }
 
-        public async Task<ProjectPayment?> GetByIdAsync(int id)
+        public async Task<ProjectPaymentView?> GetByIdAsync(int id)
         {
             return await _context.ProjectPayments.FindAsync(id);
         }
 
-        public async Task AddAsync(ProjectPayment entity)
+        public async Task AddAsync(ProjectPaymentView entity)
         {
             await _context.ProjectPayments.AddAsync(entity);
         }
 
-        public async Task UpdateAsync(ProjectPayment entity)
+        public async Task UpdateAsync(ProjectPaymentView entity)
         {
             _context.ProjectPayments.Update(entity);
         }
 
-        public async Task DeleteAsync(ProjectPayment entity)
+        public async Task DeleteAsync(ProjectPaymentView entity)
         {
             _context.ProjectPayments.Remove(entity);
         }

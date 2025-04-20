@@ -67,8 +67,8 @@ namespace PersofinDesktop.ViewModel.Projects
             }
         }
 
-        private ProjectPayment _payment;
-        public ProjectPayment Payment
+        private ProjectPaymentView _payment;
+        public ProjectPaymentView Payment
         {
             get => _payment;
             set
@@ -78,8 +78,8 @@ namespace PersofinDesktop.ViewModel.Projects
             }
         }
 
-        private ObservableCollection<ProjectPayment> _payments;
-        public ObservableCollection<ProjectPayment> Payments
+        private ObservableCollection<ProjectPaymentView> _payments;
+        public ObservableCollection<ProjectPaymentView> Payments
         {
             get => _payments;
             set
@@ -90,8 +90,8 @@ namespace PersofinDesktop.ViewModel.Projects
         }
 
         // Optional: selected Project object, useful for UI dropdown binding
-        private ProjectPayment? _selectedPayment;
-        public ProjectPayment? SelectedPayment
+        private ProjectPaymentView? _selectedPayment;
+        public ProjectPaymentView? SelectedPayment
         {
             get => _selectedPayment;
             set

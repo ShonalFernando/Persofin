@@ -1,4 +1,5 @@
 ﻿using iNKORE.UI.WPF.Modern.Controls;
+using PersofinDesktop.Model.ProjectManagement;
 using PersofinDesktop.View.Transactions;
 using PersofinDesktop.ViewModel.Projects;
 using System;
@@ -27,10 +28,20 @@ namespace PersofinDesktop.View.Projects
         public ProjectsView()
         {
             InitializeComponent();
-            DataContext = new ProjectsViewModel((projectId) =>
+            DataContext = new ProjectsViewModel((target,projectId) =>
             {
-                //NavigationService?.Navigate(new PaymentsView(projectId));
-                NavigationService?.Navigate(new ProjectTaskView());
+                switch(target)
+                {
+                    case Constants.PageRegistry.Project_ResourceView:
+                        NavigationService?.Navigate(new ProjectResourceView());
+                        break;
+                    case Constants.PageRegistry.Projects_PaymentsView:
+                        NavigationService?.Navigate(new PaymentsView(projectId));
+                        break;
+                    case Constants.PageRegistry.Projects_TasksView:
+                        NavigationService?.Navigate(new ProjectTaskView());
+                        break;
+                }
             });
         }
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PersofinDesktop.ViewModel.Projects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace PersofinDesktop.View.Projects
         public ProjectResourceView()
         {
             InitializeComponent();
+            DataContext = new ProjectResourceViewModel();
         }
     }
 }

@@ -85,8 +85,8 @@
             
             <TextBlock Margin="10,6,10,0" Foreground="#3F9A9A9A">-------------------------------------------------------------</TextBlock>
             <Button Style="{DynamicResource ButtonPrimary}" Content="Payments →" Width="125" Command="{Binding GoToPaymentsCommand}"/>
-            <Button Style="{DynamicResource ButtonPrimary}" Content="Resources →" Width="125" Command="{Binding GoToPaymentsCommand}" Margin="10,0,0,0"/>
-            <Button Style="{DynamicResource ButtonPrimary}" Content="Tasks →" Width="125" Command="{Binding GoToPaymentsCommand}" Margin="10,0,0,0"/>
+            <Button Style="{DynamicResource ButtonPrimary}" Content="Resources →" Width="125" Command="{Binding GoToResourcesCommand}" Margin="10,0,0,0"/>
+            <Button Style="{DynamicResource ButtonPrimary}" Content="Tasks →" Width="125" Command="{Binding GoToTasksCommand}" Margin="10,0,0,0"/>
         </StackPanel>
     </Grid>
 </Page>

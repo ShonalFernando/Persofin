@@ -44,7 +44,7 @@ namespace PersofinDesktop.Data.Repositories
         }
 
         // Extended methods handling relationships
-        public async Task<IEnumerable<ProjectPayment>> GetPaymentsForProjectAsync(int projectId)
+        public async Task<IEnumerable<ProjectPaymentView>> GetPaymentsForProjectAsync(int projectId)
         {
             return await _context.ProjectPayments
                 .Where(p => p.ProjectId == projectId)

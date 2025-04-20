@@ -43,7 +43,7 @@ namespace PersofinDesktop.ViewModel.Projects
             _isEditMode = false;
             ToggleAddEdit();
 
-            Payment = new ProjectPayment();
+            Payment = new ProjectPaymentView();
 
             ProjectId = _projectID = projectId;
             RefreshPayments();
@@ -112,7 +112,7 @@ namespace PersofinDesktop.ViewModel.Projects
                 ShowAll = false;
             }
                 Payments.Clear();
-                Payments = new ObservableCollection<ProjectPayment>(
+                Payments = new ObservableCollection<ProjectPaymentView>(
                     (await _projectPayRepo.GetAllAsync())
                     .Where(f => f.PaymentDate.Date == DateSelected.Date)
                     .ToList());
@@ -167,7 +167,7 @@ namespace PersofinDesktop.ViewModel.Projects
         // Populators
         private async void RefreshPayments()
         {
-            Payments = new ObservableCollection<ProjectPayment>(await _projectRepo.GetPaymentsForProjectAsync(ProjectId));
+            Payments = new ObservableCollection<ProjectPaymentView>(await _projectRepo.GetPaymentsForProjectAsync(ProjectId));
         }
 
         // UI Magic

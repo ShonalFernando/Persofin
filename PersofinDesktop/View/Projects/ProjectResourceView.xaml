@@ -39,29 +39,32 @@
 
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="11*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="6*"/>
                 <ColumnDefinition Width="3*"/>
             </Grid.ColumnDefinitions>
-            <DataGrid ItemsSource="{Binding Payments}"
-              SelectedItem="{Binding SelectedPayment, Mode=TwoWay}"
-              AutoGenerateColumns="False"
-              SelectionMode="Single"
-              IsReadOnly="True">
+
+            <TreeView ItemsSource="{Binding TreeNodes}"
+              >
+                <TreeView.ItemTemplate>
+                    <HierarchicalDataTemplate ItemsSource="{Binding Children}">
+                        <TextBlock Text="{Binding Title}" />
+                    </HierarchicalDataTemplate>
+                </TreeView.ItemTemplate>
+                </TreeView>
+
+            <DataGrid Grid.Column="1"
+              ItemsSource="{Binding FilteredResources}" 
+              AutoGenerateColumns="False">
                 <DataGrid.Columns>
-                    <!-- ID Column -->
-                    <DataGridTextColumn Header="ID" Binding="{Binding PaymentId}" Width="Auto"/>
-
-
-                    <DataGridTextColumn Header="Amount" Binding="{Binding Amount, StringFormat={}{0:N2} LKR}" Width="*"/>
-                    <DataGridTextColumn Header="Payment Date" Binding="{Binding PaymentDate}" Width="*"/>
-                    <DataGridTextColumn Header="Notes" Binding="{Binding Notes}" Width="*"/>
-
+                    <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
+                    <DataGridTextColumn Header="Type" Binding="{Binding ResourceType}" />
+                    <DataGridTextColumn Header="Added On" Binding="{Binding AddedOn}" />
                 </DataGrid.Columns>
             </DataGrid>
-
-
-            <StackPanel Margin="10" Grid.Column="1">
-                <TextBlock Text="Payment ID" HorizontalAlignment="Left" Foreground="#FF3E3E3E"/>
+            
+            <StackPanel Margin="10" Grid.Column="2">
+                <TextBlock Text="Resource ID" HorizontalAlignment="Left" Foreground="#FF3E3E3E"/>
                 <StackPanel Orientation="Horizontal">
                     <TextBox MinWidth="170"  
                    HorizontalAlignment="Left" Text="{Binding PaymentId}" IsEnabled="{Binding IDFieldEnabled}"
@@ -75,19 +78,32 @@
                 </StackPanel>
 
 
-                <TextBlock Text="Amount" HorizontalAlignment="Left" Foreground="#FF3E3E3E" Margin="0,5,0,0"/>
+                <TextBlock Text="Name" HorizontalAlignment="Left" Foreground="#FF3E3E3E" Margin="0,5,0,0"/>
                 <TextBox Width="250" 
-        Text="{Binding Amount, Mode=TwoWay}" 
-        HorizontalAlignment="Left" 
-        Margin="0,5,0,0"/>
-
-                <TextBlock Text="Payment Date" HorizontalAlignment="Left" Foreground="#FF3E3E3E"/>
-                <DatePicker Width="250" 
-            SelectedDate="{Binding PaymentDate, Mode=TwoWay}" 
-            HorizontalAlignment="Left" 
-            Margin="0,5,0,0"/>
+                    Text="{Binding Amount, Mode=TwoWay}" 
+                    HorizontalAlignment="Left" 
+                    Margin="0,5,0,0"/>
 
 
+                <TextBlock Text="Location (Web/Local)" HorizontalAlignment="Left" Foreground="#FF3E3E3E" Margin="0,5,0,0"/>
+                <TextBox Width="250" 
+                    Text="{Binding Amount, Mode=TwoWay}" 
+                    HorizontalAlignment="Left" 
+                    Margin="0,5,0,0"/>
+
+                <TextBlock Text="Category" HorizontalAlignment="Left" Foreground="#FF3E3E3E" Margin="0,5,0,0"/>
+                <TextBox Width="250" 
+                    Text="{Binding Amount, Mode=TwoWay}" 
+                    HorizontalAlignment="Left" 
+                    Margin="0,5,0,0"/>
+
+
+                <TextBlock Text="Collection" HorizontalAlignment="Left" Foreground="#FF3E3E3E" Margin="0,5,0,0"/>
+                <TextBox Width="250" 
+                    Text="{Binding Amount, Mode=TwoWay}" 
+                    HorizontalAlignment="Left" 
+                    Margin="0,5,0,0"/>
+                
                 <TextBlock Text="Notes" HorizontalAlignment="Left" Foreground="#FF3E3E3E" Margin="0,5,0,0"/>
                 <TextBox Width="250" 
          Text="{Binding Notes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 

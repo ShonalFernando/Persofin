@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PersofinDesktop.Model.ProjectManagement
 {
-    public class ProjectPayment
+    public class ProjectPaymentView
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
