@@ -301,11 +301,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
@@ -316,8 +316,7 @@
               "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Projects\\ProjectTaskView.xaml",
               "RelativeToolTip": "PersofinDesktop\\View\\Projects\\ProjectTaskView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-19T04:11:17.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T04:11:17.252Z"
             },
             {
               "$type": "Document",
@@ -329,8 +328,7 @@
               "RelativeToolTip": "PersofinDesktop\\Model\\ProjectManagement\\Project.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T09:05:07.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T09:05:07.741Z"
             },
             {
               "$type": "Document",
@@ -342,8 +340,7 @@
               "RelativeToolTip": "PersofinDesktop\\Model\\ProjectManagement\\ProjectResource.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T07:36:18.627Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T07:36:18.627Z"
             },
             {
               "$type": "Document",
@@ -355,8 +352,7 @@
               "RelativeToolTip": "PersofinDesktop\\Model\\ProjectManagement\\ProjectTask.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T07:28:10.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T07:28:10.663Z"
             },
             {
               "$type": "Document",
@@ -372,7 +368,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
@@ -387,8 +383,7 @@
               "ToolTip": "D:\\Source\\Repos\\Persofin\\PersofinDesktop\\View\\Projects\\ProjectsView.xaml",
               "RelativeToolTip": "PersofinDesktop\\View\\Projects\\ProjectsView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-11T22:45:06.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T22:45:06.486Z"
             },
             {
               "$type": "Document",
@@ -400,8 +395,7 @@
               "RelativeToolTip": "PersofinDesktop\\Model\\UIHelperModels\\ResourceNode.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T08:03:48.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T08:03:48.421Z"
             },
             {
               "$type": "Document",
@@ -413,8 +407,7 @@
               "RelativeToolTip": "PersofinDesktop\\ViewModel\\Projects\\BusinessLogic\\ProjectResourceViewModel.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T23:39:06.223Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T23:39:06.223Z"
             },
             {
               "$type": "Document",
